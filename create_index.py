@@ -1,4 +1,6 @@
-#file for creating the indexing structure of the file
+'''
+This file creates different types of indexing structures that are required... Please write code related to that only
+'''
 
 from whoosh.index import create_in
 from whoosh.fields import *
@@ -17,7 +19,7 @@ def create_schema():
     writer = ix.writer()
 
 def create_index():
-    for top, dirs, files in os.walk('./Dataset'):
+    for top, dirs, files in os.walk('./Test'):
         for nm in files:
             try:
                 fileStats = os.stat(os.path.join(top, nm))
@@ -42,6 +44,14 @@ def create_index():
             except:
                 pass
     writer.commit()
+'''
+def create_index_without_stemming():
+    #write the code here
+
+def create_index_with_stop_word():
+    #write the code here for that
+
+'''
 
 if __name__ == "__main__":
     create_schema()
