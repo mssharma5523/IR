@@ -18,10 +18,16 @@ def search_BM25(input_query):
 	with ix.searcher() as searcher:
 	    #query = QueryParser("Content", ix.schema,group=qparser.OrGroup).parse(input_query) ## here 'hsbc' is the search term
 	    results = searcher.search(input_query)
+	    response = []
 	    for x in results:
+	    	temp = {}
 	        print x['FileName']
+	        temp['FileName'] = x['FileName']
+	        temp['Title'] = x['Title']
+	        temp['Content'] = x['Content']
+	        response.append(temp)
 	    ix.close()
-	    return results
+	    return response
 
 '''
 	function for searching on the basis of TF-IDF..takes as the input parsed query and outputs the objects
@@ -32,8 +38,6 @@ def search_TFIDF(input_query):
 	with ix.searcher(weighting=scoring.TF_IDF()) as searcher:
 	    #query = QueryParser("Content", ix.schema).parse(input_query) ## here 'hsbc' is the search term
 	    results = searcher.search(input_query)
-	    for x in results:
-	        print x['FileName']
 	    ix.close()
 	    return results
 

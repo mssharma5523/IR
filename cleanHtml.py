@@ -1,5 +1,5 @@
 from HTMLParser import HTMLParser
-from re import sub
+from re import *
 from sys import stderr
 from traceback import print_exc
 

@@ -7,11 +7,15 @@ from whoosh.fields import *
 import os
 import stat
 import time
-#import cleanHtml
+import cleanHtml
+from cleanHtml import *
+import util_functions
+from util_functions import *
+
 
 #The schema can be improved by storing the keywords (Title) which can enhance the search
 def create_schema():    
-    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Content=TEXT(stored=True), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
+    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Title=TEXT(stored=True), Content=TEXT(stored=True), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
                     LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True))
 
     ix = create_in("./Indexes", schema)
@@ -26,10 +30,12 @@ def create_index():
                 content = ""
                 with open(os.path.join(top,nm), 'r') as content_file:
                     content = content_file.read()
-                #content = dehtml(content)
+                title = getTitle(content)
+                content = dehtml(content)
                 fileInfo = {
                     'FileName':nm,
                     'FilePath':os.path.join(top, nm),
+                    'Title': title,
                     'Content' : content,
                     'Size' : fileStats [ stat.ST_SIZE ],
                     'LastModified' : time.ctime ( fileStats [ stat.ST_MTIME ] ),
@@ -38,7 +44,7 @@ def create_index():
                     'Mode' : fileStats [ stat.ST_MODE ]
                 }
                 try:
-                    writer.add_document(FileName=u'%s'%fileInfo['FileName'],FilePath=u'%s'%fileInfo['FilePath'],Content=u'%s'%fileInfo['Content'],Size=u'%s'%fileInfo['Size'],LastModified=u'%s'%fileInfo['LastModified'],LastAccessed=u'%s'%fileInfo['LastAccessed'],CreationTime=u'%s'%fileInfo['CreationTime'],Mode=u'%s'%fileInfo['Mode'])
+                    writer.add_document(FileName=u'%s'%fileInfo['FileName'],FilePath=u'%s'%fileInfo['FilePath'],Title=u'%s'%fileInfo['Title'],Content=u'%s'%fileInfo['Content'],Size=u'%s'%fileInfo['Size'],LastModified=u'%s'%fileInfo['LastModified'],LastAccessed=u'%s'%fileInfo['LastAccessed'],CreationTime=u'%s'%fileInfo['CreationTime'],Mode=u'%s'%fileInfo['Mode'])
                 except:
                     pass
             except:
