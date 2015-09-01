@@ -3,15 +3,42 @@ This file creates different types of indexing structures that are required... Pl
 '''
 
 from whoosh.index import create_in
+from whoosh.analysis import StandardAnalyzer,StopFilter,StemmingAnalyzer
 from whoosh.fields import *
+from whoosh.lang.porter import stem
 import os
 import stat
 import time
 #import cleanHtml
 
+
 #The schema can be improved by storing the keywords (Title) which can enhance the search
-def create_schema():    
+
+#This is without the Stemming,StopWords..by default
+def create_schema():
+    #analyzer = StandardAnalyzer()    
     schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Content=TEXT(stored=True), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
+                    LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True))
+
+    ix = create_in("./Indexes", schema)
+    global writer
+    writer = ix.writer()
+
+#creates the schema for indexing by stemming words
+def create_schema_with_stemming():
+    analyzer = StemmingAnalyzer()
+    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Content=TEXT(stored=True,analyzer=analyzer), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
+                    LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True))
+
+    ix = create_in("./Indexes", schema)
+    global writer
+    writer = ix.writer()
+
+#includes stop words in the schema
+def create_schema_with_stopwords():
+    analyzer = StandardAnalyzer(stoplist=None)    
+    analyzer = StandardAnalyzer()
+    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Content=TEXT(stored=True,analyzer=analyzer), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
                     LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True))
 
     ix = create_in("./Indexes", schema)
@@ -44,15 +71,10 @@ def create_index():
             except:
                 pass
     writer.commit()
-'''
-def create_index_without_stemming():
-    #write the code here
 
-def create_index_with_stop_word():
-    #write the code here for that
-
-'''
 
 if __name__ == "__main__":
     create_schema()
+    #create_schema_with_stopwords()
+    #create_schema_with_stemming()
     create_index()
