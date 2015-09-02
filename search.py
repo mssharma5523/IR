@@ -7,12 +7,14 @@ from whoosh.fields import *
 from whoosh.qparser import QueryParser
 from whoosh import scoring
 from whoosh import qparser
-
+from util_functions import getRelevantText
+from whoosh.scoring import WeightingModel
+from query import query_AND
 
 '''
 	function for searching on the basis of BM25..takes as the input parsed query and outputs the objects
 '''
-def search_BM25(input_query):
+def search_BM25(input_query,query):
 	ix = open_dir('Indexes')
 	writer = ix.writer()
 	with ix.searcher() as searcher:
@@ -24,7 +26,8 @@ def search_BM25(input_query):
 	        print x['FileName']
 	        temp['FileName'] = x['FileName']
 	        temp['Title'] = x['Title']
-	        temp['Content'] = x['Content']
+	        temp['Content'] = x['Content'][0:20]
+	        temp['RelevantText'] = getRelevantText(x['Content'],query.lower())
 	        response.append(temp)
 	    ix.close()
 	    return response
@@ -32,39 +35,61 @@ def search_BM25(input_query):
 '''
 	function for searching on the basis of TF-IDF..takes as the input parsed query and outputs the objects
 '''
-def search_TFIDF(input_query):
+def search_TFIDF(input_query,query):
 	ix = open_dir('Indexes')
 	writer = ix.writer()
 	with ix.searcher(weighting=scoring.TF_IDF()) as searcher:
 	    #query = QueryParser("Content", ix.schema).parse(input_query) ## here 'hsbc' is the search term
 	    results = searcher.search(input_query)
+	    response = []
+	    for x in results:
+	    	temp = {}
+	        print x['FileName']
+	        temp['FileName'] = x['FileName']
+	        temp['Title'] = x['Title']
+	        temp['Content'] = x['Content'][0:20]
+	        temp['RelevantText'] = getRelevantText(x['Content'],query.lower())
+	        response.append(temp)
 	    ix.close()
-	    return results
-
+	    return response
 '''
 	function for searching on the basis of TF..takes as the input parsed query and outputs the objects
 '''
-def search_TF(input_query):
+def search_TF(input_query,query):
 	ix = open_dir('Indexes')
 	writer = ix.writer()
 	with ix.searcher(weighting=scoring.Frequency()) as searcher:
 	    #query = QueryParser("Content", ix.schema).parse(input_query) ## here 'hsbc' is the search term
-	    results = searcher.search(query)
+	    results = searcher.search(input_query)
+	    response = []
 	    for x in results:
+	    	temp = {}
 	        print x['FileName']
+	        temp['FileName'] = x['FileName']
+	        temp['Title'] = x['Title']
+	        temp['Content'] = x['Content'][0:20]
+	        temp['RelevantText'] = getRelevantText(x['Content'],query.lower())
+	        response.append(temp)
 	    ix.close()
-	    return results
-
+	    return response
 '''
 	function for phrasal queries
 '''
-def searchPhrasal(input_query):
+def searchPhrasal(query):
 	ix = open_dir('Indexes')
+	input_query=query_AND("\"" + query + "\"")
 	writer = ix.writer()
 	with ix.searcher() as searcher:
 	    #query = QueryParser("Content", ix.schema,group=qparser.OrGroup).parse(input_query) ## here 'hsbc' is the search term
 	    results = searcher.search(input_query)
+	    response = []
 	    for x in results:
+	    	temp = {}
 	        print x['FileName']
+	        temp['FileName'] = x['FileName']
+	        temp['Title'] = x['Title']
+	        temp['Content'] = x['Content'][0:20]
+	        temp['RelevantText'] = getRelevantText(x['Content'],query.lower())
+	        response.append(temp)
 	    ix.close()
-	    return results
+	    return response
