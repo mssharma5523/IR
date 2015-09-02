@@ -1,0 +1,2046 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" href="layouts/basic.css">
+<title>CRUISE & FERRY CENTER - Križarjenja, Ladijski prevozi, Letalske in železniške vozovnice, Potovanja, Počitnice</title>
+<script language="javascript" src="scripts/functions.js"></script>
+</head>
+
+<body bgcolor=white leftmargin=0 topmargin=0 marginwidth=0 marginheight=0 style="background:url(images/ozadje_svetlomodro.gif); background-repeat: repeat-x">
+<table width=100% height=100% border=0 cellpadding=0 cellspacing=0 valign=top>
+<tr>
+	<td width=100% height=100% valign=top align=center>
+		<table border=0 cellpadding=0 cellspacing=0 width=100% height=100% align=center>
+		<tr>
+			<td width=50%>&nbsp;</td>			
+			<td width=758 height=33 align=left valign=bottom bgcolor="white">
+				<table border=0 cellpadding=0 cellspacing=0 height=33>
+				<tr>
+					<td width=169><a href="default.asp"><img border=0 src="images/zgoraj_cfc_logo.gif" ></a></td>
+					<td width=436 valign="bottom"><!-- vsebina -->
+						<table border=0 cellpadding=0 cellspacing=0 height=33>
+						<tr>
+							
+							<td valign=bottom><a href=default.asp?k=krizarjenja><img border=0 src=images/krizarjenja_SLO.gif></a></td><td><img src=images/spacer.gif width=3></td>
+							
+							
+							<td valign=bottom><a href=default.asp?k=trajekti><img border=0 src=images/trajekti_SLO.gif></a></td><td><img src=images/spacer.gif width=3></td>
+							
+							
+							<td valign=bottom><a href=default.asp?k=letala><img border=0 src=images/letala_SLO.gif></a></td><td><img src=images/spacer.gif width=3></td>
+							
+							
+							<td valign=bottom><a href=default.asp?k=vlaki><img border=0 src=images/vlaki_SLO.gif></a></td><td><img src=images/spacer.gif width=3></td>
+							
+							
+							<td valign=bottom><a href=default.asp?k=hoteli><img border=0 src=images/hoteli_in_paketi_SLO.gif></a></td><td><img src=images/spacer.gif width=3></td>
+							
+							
+							<td valign=bottom><a href=default.asp?k=b2b><img border=0 src=images/agenti_SLO.gif></a></td>
+						</tr>
+						</table>
+					</td>
+					<td width=151 align=center valign="top" style="padding-top: 30px"> <!-- desni del + 3px offset-->
+						
+							<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td class="Zastavice"><a href="default.asp"><span style="color: #D53A55">SLO</span></a></td>
+								<td style="padding-left: 5px;"><img src="images/kara.gif"></td>
+								<td class="Zastavice" style="padding-left: 5px;"><a href="en/"><span style="color: black">ENG</span></a></td>
+								<td style="padding-left: 5px;"><img src="images/kara.gif"></td>
+								<td class="Zastavice" style="padding-left: 5px;"><a href="hr/"><span style="color: black">HR</span></a></td>
+							</tr>
+							</table>
+						
+					</td>
+				</tr>
+				</table>
+			</td>
+			<td width="50%">&nbsp;</td>			
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td height="4" bgcolor="#96A5B4"><img src="images/spacer.gif" height=4 width="758" /></td>
+			<td></td>
+		</tr>
+		
+		
+			<tr>
+				<td></td>
+				<td>
+					<div id="Pasica">
+						
+							<script src="layouts/insertflash.js" language="javascript" type="text/javascript"></script>														
+							<script language="javascript" type="text/javascript">
+								InsertFlash('Pasica', 'PasicaLogo', 6, 'filelib/flash/CFC_animacija_758x172.swf', 758, 172, {menu: 'false', quality: 'best', scale: 'noscale', bgcolor: '#FFFFFF'})
+							</script>
+						
+					</div>
+				</td>
+				<td></td>
+			</tr>
+		
+				
+		<tr>
+			<td></td>
+			<td height="4" bgcolor="white"></td>
+			<td></td>
+		</tr>
+				
+		<tr>
+			<td>&nbsp;</td>
+			<td width=758 height=100% align=left valign=top>
+				<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%>			
+				<tr>
+					<td width=100% valign=top>
+						<!-- VSEBINA -->						
+
+
+
+<script language=javascript>
+	var current_em=1.0;
+	function Povecaj()
+	{
+		current_em=current_em+0.1;				
+		ChangeCss(".BodyContent P", "fontSize", current_em+"em");
+		ChangeCss("TABLE.paket .postavka_ime", "fontSize", current_em+"em");
+		ChangeCss("TABLE.paket .postavka_vsebina", "fontSize", current_em+"em");		
+	}
+	
+	function Pomanjsaj()
+	{
+		current_em=current_em-0.1;
+		
+		ChangeCss(".BodyContent P", "fontSize", current_em+"em");
+		ChangeCss("TABLE.paket .postavka_ime", "fontSize", current_em+"em");
+		ChangeCss("TABLE.paket .postavka_vsebina", "fontSize", current_em+"em");		
+		
+	}
+	
+</script>
+
+
+
+
+
+<table border=0 cellpadding=0 height=100% cellspacing=0>
+<tr>
+
+	<td valign=top width=168 bgcolor=white>
+
+<script language=javascript>
+
+	function PrijaviNaNovice()
+	{		
+		if (enovice.email.value == "")
+		{
+			alert('Prosimo, da vpišite pravilni e-mail');
+		} else
+			enovice.submit();
+		
+		return false;
+	}
+	
+</script>
+
+<a OnClick="OdpriPopup('default.asp?k=poklicite_specialista', 450, 360,'');return false;" href="#"><img border=0 src=images/poklicite_specialista_SLO.jpg></a>
+<img src=images/spacer.gif height=3 /><br />
+<!---------------- MENU --------------------------->
+
+
+<table border=0 cellpadding=0 cellspacing=0 bgcolor="#DBE0E5" width=168>
+<tr>
+	<td style="padding-left:13px;" background=images/menu_zgoraj_bg.gif width=100% height=24><span style="font-size:13px;font-family:Arial;font-weight:bold;">Menu</span></td>
+</tr>
+
+				<tr>
+					<td bgcolor=#B0B9C3 width=100% height=1></td>
+				</tr>
+			
+					<tr>
+						<td class="MenuLevel0"><a style="width:100%;padding-left:13px;" href="default.asp?id=204">Posebna in Last Minute ponudba </a></td>
+					</tr>			
+					
+				<tr>
+					<td bgcolor=#B0B9C3 width=100% height=1></td>
+				</tr>
+			
+					<tr>
+						<td class="MenuLevel0"><a style="width:100%;padding-left:13px;" href="default.asp?id=205">Predstavitev CFC</a></td>
+					</tr>			
+					
+				<tr>
+					<td bgcolor=#B0B9C3 width=100% height=1></td>
+				</tr>
+			
+					<tr>
+						<td class="MenuLevel0"><a style="width:100%;padding-left:13px;" href="default.asp?id=474">Ponudba</a></td>
+					</tr>			
+					
+				<tr>
+					<td bgcolor=#B0B9C3 width=100% height=1></td>
+				</tr>
+			
+					<tr>
+						<td class="MenuLevel0"><a style="width:100%;padding-left:13px;" href="default.asp?id=79">Novice</a></td>
+					</tr>			
+					
+				<tr>
+					<td bgcolor=#B0B9C3 width=100% height=1></td>
+				</tr>
+			
+					<tr>
+						<td class="MenuLevel0"><a style="width:100%;padding-left:13px;" href="default.asp?id=203">Uporabno za potnike</a></td>
+					</tr>			
+					
+				<tr>
+					<td bgcolor=#B0B9C3 width=100% height=1></td>
+				</tr>
+			
+					<tr>
+						<td class="MenuLevel0"><a style="width:100%;padding-left:13px;" href="default.asp?id=213">Kontakti</a></td>
+					</tr>			
+					
+</table>
+<!-------------- /MENU ---------------------------->
+
+<img src=images/spacer.gif height=5><br />
+
+<!------------------ E-NOVICE -------------------------------------->
+<form name=enovice method=POST action="prijavi_novice.asp" style="margin: 0px">
+<table border=0 width=168 cellpadding=0 cellspacing=0>
+
+<input type=hidden name=ref value="/Default.asp?">
+<tr>
+	<td colspan=2 style="padding-top: 10px;" background=images/enovice_zgoraj.gif height=25>
+		<font color="white" size="2" face="Tahoma">&nbsp;<b>E-novice</b></font><br>
+				
+	</td>
+</tr>
+<tr>
+	<td colspan=2 background=images/enovice_bg.gif>
+		<font color="white" size="1" face="Tahoma">&nbsp;<b>Vpišite e-mail:</b></font>		
+	</td>	
+</tr>
+<tr>
+	<td colspan=2 background=images/enovice_sredina_bg.gif>
+		<table border=0 cellpadding=0 cellspacing=0 width=168>
+		<tr>
+			<td>
+				<img src=images/spacer.gif height=2><br>
+				<input type=text name=email style="border:0;width:100px">
+			</td>
+			<td align=right><a OnClick="return PrijaviNaNovice()" href="#"><font face="Tahoma" size="1" color="white"><b>Prijavi</b></font></a>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan=2 height=3><img src=images/spacer.gif height=3></td>
+		</tr>
+		</table>		
+	</td>	
+</tr>
+<tr>
+	<td colspan=2 background=images/enovice_bg.gif height=20>
+		&nbsp;<a href="default.asp?k=mesecne_nagrade"><font face="Tahoma" size="1" color="white"><b>Mesečne nagrade</b></font></a>
+	</td>	
+</tr>
+</table>
+</form>
+<!---------------------------- /E-NOVICE ------------------------------------>
+
+<!---------------------------- IZBRANE POVEZAVE ------------------------------------>
+
+				<img src=images/spacer.gif height=5><br>
+				<table border=0 cellpadding=0 cellspacing=0 width=168>
+				<tr>
+					<td style="padding-top:3px;" width=168 height=30 background=images/izbrane_povezave_zgoraj_bg.gif>
+						&nbsp;&nbsp;<font size=2 face="Tahoma" color="#666666"><b>Izbrane povezave</b></font>
+					</td>
+				</tr>
+				<tr>
+					<td>						
+						<table width=168 border=0 cellpadding=0 cellspacing=0 background=images/izbrane_povezave_bg.gif>
+						<!--
+						<tr>
+							<td colspan=4 height=5><img src=images/spacer.gif height=5></td>
+						</tr>
+						-->
+			
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_top href="default.asp?id=234"><font color="#666666">10 razlogov zakaj na križarjenje</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_top href="default.asp?id=235"><font color="#666666">Hotel vs. Križarjenje</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_top href="default.asp?id=236"><font color="#666666">5 najbolj prodajanih</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_top href="default.asp?id=207"><font color="#666666">Stranke o nas</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_top href="default.asp?id=237"><font color="#666666">Članki iz medijev</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_top href="default.asp?id=214"><font color="#666666">CFC izjava o varovanju podatkov</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_top href="default.asp?id=1628"><font color="#666666">Ladje v izgradnji</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_blank href="http://www.lonelyplanet.com/destinations/"><font color="#666666">Svetovni vodič</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_blank href="http://www.mtaj.si/vsebine/potpoevropi/"><font color="#666666">Potovanje po Evropi</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_blank href="http://slovenian.wunderground.com/"><font color="#666666">Vreme</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_blank href="http://www.worldatlas.com"><font color="#666666">Atlas sveta</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_blank href="http://www.earthcalendar.net"><font color="#666666">Prazniki po svetu</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_blank href="http://www.xe.com/ucc/"><font color="#666666">Pretvornik svetovnih valut</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+					<tr>
+						<td width=5><img src=images/spacer.gif width=5></td>
+						<td valign=top><img src=images/izbrane_povezave_pika.jpg></td>
+						<td valign=top style="padding-left:2px;"><a target=_blank href="http://www.rnliseasafety.org.uk/upload/seasafety/e-learning/nav.htm"><font color="#666666">Safety on the Sea</font></a>
+						<!--<td height=15><img src=images/spacer.gif height=15>&nbsp;</td>-->
+					</tr>
+					<tr>
+						<td colspan=3 height=2><img src=images/spacer.gif height=2></td>
+					</tr>
+					
+						<tr>
+							<td colspan=3 height=6><img src=images/spacer.gif height=6></td>
+						</tr>
+			
+						</table>
+					</td>
+				</tr>
+				
+				<!--
+				<tr>
+					<td><img src=images/izbrane_povezave_spodaj.jpg></td>
+				</tr>
+				-->
+				</table>
+			   
+<!---------------------------- ZADNJE 3 NOVICKE ------------------------------------>
+
+	<img src=images/spacer.gif height=5><br>
+	<table border=0 cellpadding=0 cellspacing=0 width=168 ID="Table1">
+	<tr>
+		<td style="padding-top:3px;" width=168 height=25 background=images/zadnje_novice_zgoraj_bg.gif>
+			&nbsp;&nbsp;<font size=2 face="Tahoma" color="#265480"><b>Zadnje novice</b></font>
+		</td>
+	</tr>
+	<tr>
+		<td>			
+			<table width=168 border=0 cellpadding=0 cellspacing=0 background=images/zadnje_novice_bg.gif ID="Table2">
+			<!--
+			<tr>
+				<td colspan=4 height=15><img src=images/spacer.gif height=15></td>
+			</tr>
+			-->
+						
+				<tr>
+					<td width=5><img src=images/spacer.gif width=5></td>
+					<td valign=top><img src=images/zadnje_novice_pika.gif></td>
+					<td valign=top style="padding-left:2px;"><a href="default.asp?k=prikazi_novico&id=476">
+						<font color="#265480"><b>3.6.2008</b></font><br>
+						<font color="#265480">Lani en osebni avtomobil na dva prebivalca</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=3 height=5><img src=images/spacer.gif height=5></td>
+				</tr>				
+							
+				<tr>
+					<td width=5><img src=images/spacer.gif width=5></td>
+					<td valign=top><img src=images/zadnje_novice_pika.gif></td>
+					<td valign=top style="padding-left:2px;"><a href="default.asp?k=prikazi_novico&id=477">
+						<font color="#265480"><b>3.6.2008</b></font><br>
+						<font color="#265480">Oasis of the Seas in Allure of the Seas sta izbrani imeni za ladji projekta Genesis</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=3 height=5><img src=images/spacer.gif height=5></td>
+				</tr>				
+							
+				<tr>
+					<td width=5><img src=images/spacer.gif width=5></td>
+					<td valign=top><img src=images/zadnje_novice_pika.gif></td>
+					<td valign=top style="padding-left:2px;"><a href="default.asp?k=prikazi_novico&id=469">
+						<font color="#265480"><b>20.5.2008</b></font><br>
+						<font color="#265480">Aerodrom Ljubljana v prvem četrtletju z višjimi prihodki</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=3 height=5><img src=images/spacer.gif height=5></td>
+				</tr>				
+				
+			<tr>
+				<td colspan=3 style="padding-right:3px;" align=right><a href=default.asp?k=novice><font color=#265480>Vse &#187;</font></a></td>
+			</tr>
+			</table>			
+		</td>
+	</tr>
+	<tr>
+		<td><img src=images/zadnje_novice_spodaj.gif></td>
+	</tr>
+	</table>
+
+<!---------------------------- /ZADNJE 3 NOVICKE ------------------------------------>
+
+
+
+
+
+</td>
+
+	<td width=3><img src=images/spacer.gif width=3></td>
+	<td width=436 height=100% valign=top>
+		<!-- VSEBINA -->
+		<table border=0 cellpadding=0 cellspacing=0 width=100% height=100% bgcolor=#CBE2FF valign=top>
+				
+		<tr>
+			<td height=4></td>
+		</tr>
+		
+		<tr>
+			<td valign=top width="436" height=20>
+				<table border=0 cellpadding=0 cellspacing=0 width="436">
+				<tr>
+					<td align="left" style="padding-left: 10px;" width="300">
+						<!-- POT -->
+						<!-- narisemo pot -->
+						&#187; <b><a href=default.asp><font color=black><b>Domov</b></font></a></b>
+												
+					</td>
+					<td></td>
+					<td align=right style="padding-right:10px">
+						<table border=0 cellpadding=0 cellspacing=0>
+						<tr>
+							<td valign=bottom><a href="#" onclick="Povecaj(); return false"><img border=0 src="images/T+.gif"></a></td>
+							<td width=2></td>
+							<td valign=bottom><a href="#" onclick="Pomanjsaj(); return false"><img border=0 src="images/T-.gif"></a></td>					
+							<td width=2></td>
+							<td valign=bottom><a OnClick="return OdpriPopup('/Default.asp?printable=yes', 450, 750,'');;" href="#"><img border=0 alt="Natisni stran" src="images/tiskalnik.gif"></a></td>
+							<td width=2></td>					
+							<td valign=bottom><a OnClick="OdpriPopup('default.asp?k=poslji_prijatelju&ref=http%3A%2F%2Fwww%2Ecruise%2Dferry%2Dcenter%2Ecom%2FDefault%2Easp%3F', 500, 230,'');" href="#"><img alt="Pošlji prijatelju" border=0 src="images/pismo.gif"></a></td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+				
+		<tr>
+			<td valign=top>
+			
+					<table border=0 cellpadding=0 cellspacing=0 width=100%>
+					<tr>
+						<td height=5></td>
+					</tr>
+				
+									<tr>
+										<td><a target=_blank href="http://www.costacruise.com/B2C/EU/ebrochure09/costa_catalogue.html"><img border=0 src=filelib/gif/banner_paketov/costa_brochure_2009.gif width=432 height=203></a></td>
+									</tr>										
+									
+					</table>
+					
+								
+				<table border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td colspan=3><br></td>
+				</tr>
+								
+				
+							<!-- TEXT -->
+							<tr>			
+								<td width=10><img src=images/spacer.gif width=5></td>
+								<td width=416 valign=top class="BodyContent"><SCRIPT 
+src="http://www.ooyala.com/player.js?width=416&amp;height=232&amp;embedCode=I0Z3M6DWjJJKdsNpOeyCrG0BlryDC7YL"></SCRIPT>
+<BR>
+</td>
+								<td width=10><img src=images/spacer.gif width=5></td>
+							</tr>
+							<!-- /TEXT -->
+							
+							<!-- TITLE -->
+							<tr>			
+								<td width=10><img src=images/spacer.gif width=5></td>
+								<!-- <td width=416 valign=top><font size=3 style="color:#3366CC"><b>Izbrana ponudba</b></font><br><br></td> -->
+								<td width=416 valign=top><font size=3 style="color:#003399"><b>Izbrana ponudba</b></font><br><br></td>
+								
+								<td width=10><img src=images/spacer.gif width=5></td>
+							</tr>
+							<!-- /TITLE -->
+							
+									<div class="center">
+										
+									</div>						
+								
+									<tr>
+										<td width=10><img src=images/spacer.gif width=5></td>
+										<td style="padding-right:8px" align=right><!-- PAGER -->
+<a href='default.asp?id=47&filter_prva_stran=true&iskalnik_aktiven=&stran=1'>&lt; </a><a href='default.asp?id=47&filter_prva_stran=true&iskalnik_aktiven=&stran=1' style='color:red'><b>1</b></a> <a href='default.asp?id=47&filter_prva_stran=true&iskalnik_aktiven=&stran=2'>2</a> <a href='default.asp?id=47&filter_prva_stran=true&iskalnik_aktiven=&stran=2'>&gt;</a><!-- PAGER --></td>
+										<td width=10><img src=images/spacer.gif width=5></td>
+									</tr>
+								
+								
+																												
+								<!-- PAKETI -->						
+															
+								<!-- EN PAKETEK -->
+								<tr>			
+									<td width=10><img src=images/spacer.gif width=5></td>
+									<td align=center width=416 valign=top>
+															
+	<table border=0 cellspacing=0 cellpadding=0 border=0>
+	<!--
+	<tr>
+		<td colspan=3 width=8><img src=images/spacer.gif height=8></td>
+	</tr>
+	-->
+											
+	<!-- zgornji del, levi & desni rob -->
+	<tr>
+												
+		<td><img width=9 src=images/paket_zgoraj_levo.gif></td>
+		<td bgcolor=white height=9 width=416></td>
+		<td><img width=9 height=9 src=images/paket_zgoraj_desno.gif></td>
+	</tr>
+	<tr>
+		<td width=9 bgcolor=white></td>
+		<td width=394 bgcolor=white>
+			<img src=images/spacer.gif width=394 height=1><br>									
+			<table border=0 cellpadding=0 cellspacing=0 class=paket>
+			<tr>
+				<td valign=top width=80%>
+					<span class=ime>8 dni - BALTSKE PRESTOLNICE</span><br>
+					<img src=images/spacer.gif height=20><br>
+					<table border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td>
+							
+								<img class=logo src=imagelib/paketi/cruisers/costa/mediterraneax.jpg>
+							
+						</td>
+						<td width=5><img src=images/spacer.gif width=5><br></td>
+						<td valign=top>									
+							<span class=postavka_ime>Ime ladje:</span><br>
+							<!--
+							<span class=postavka_vsebina>Costa Mediterranea<br>(Costa Crociere)</span><br>
+							-->
+							<span class=postavka_vsebina>Costa Mediterranea</span><br>
+							<img src=images/spacer.gif height=5><br>
+							<span class=postavka_ime>Cena:</span><br><span class=postavka_vsebina>od € 899 do € 4.049</span><br>
+							<img src=images/spacer.gif height=5><br>							
+																
+							
+								  <span class=postavka_ime>Posebna ponudba:</span><br><span class=postavka_vsebina>22.06. od 154€</span><br>
+							
+							
+							<img src=images/spacer.gif height=5><br>
+							
+							<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td>
+									<span class=postavka_ime>Kategorija:</span>
+								</td>
+								<td>															
+									
+        <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polovicka.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_prazna.jpg></a></td>
+        
+        </tr>
+        </table>
+        									
+								</td>
+							</tr>
+							</table>
+						</td>
+					</tr>
+					</table>
+				</td>					
+				<td valign=top align=center width=20%>
+				
+					<img class=logo src=imagelib/logo/logo/costa.jpg><br>					
+													
+					<table border=0 cellpadding=4 cellspacing=0>
+					<tr>
+						<td align=right>							
+							<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right><span class=postavka_ime><nobr>Datum odhoda:</nobr></span></td>
+							</tr>
+							<tr>
+								<td align=right>
+								maj, junij, julij, avgust, september
+								</td>
+							</tr>							
+							<tr>
+								<td>
+																					
+									<img src=images/lastminute_ponudba_SLO.gif><br>
+							
+							
+								</td>
+							</tr>
+							</table>									
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>			
+			</table>												
+		</td>
+		<td width=9 bgcolor=white></td>
+	</tr>
+	
+	
+			<!-- spodnji del, brez podrobnosti o paketu-->
+			<tr>					
+				<td colspan=3>
+					<table width=416 border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td width=321><img src=images/paket_glava_spodaj_levo_listing.jpg></td>
+						<!--<td><a href="default.asp?k=prikazi_paket&pID=1031"><img border=0 src=images/paket_spodaj_desno.jpg></a></td> -->
+						<td width=95 background=images/paket_glava_spodaj_bg_listing.jpg>
+													
+							<a href="default.asp?k=prikazi_paket&pID=1031&menu_path=/47/"><font face=Tahoma color=white size=2><b>Podrobnosti &#187;</b></font></a>
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+		
+	</table>		
+						
+									</td>
+									<td width=10><img src=images/spacer.gif width=5></td>
+								</tr> <!-- /EN PAKATEK-->													
+															
+								<!-- EN PAKETEK -->
+								<tr>			
+									<td width=10><img src=images/spacer.gif width=5></td>
+									<td align=center width=416 valign=top>
+															
+	<table border=0 cellspacing=0 cellpadding=0 border=0>
+	<!--
+	<tr>
+		<td colspan=3 width=8><img src=images/spacer.gif height=8></td>
+	</tr>
+	-->
+											
+	<!-- zgornji del, levi & desni rob -->
+	<tr>
+												
+		<td><img width=9 src=images/paket_zgoraj_levo.gif></td>
+		<td bgcolor=white height=9 width=416></td>
+		<td><img width=9 height=9 src=images/paket_zgoraj_desno.gif></td>
+	</tr>
+	<tr>
+		<td width=9 bgcolor=white></td>
+		<td width=394 bgcolor=white>
+			<img src=images/spacer.gif width=394 height=1><br>									
+			<table border=0 cellpadding=0 cellspacing=0 class=paket>
+			<tr>
+				<td valign=top width=80%>
+					<span class=ime>8 dni - ZAHODNO SREDOZEMLJE</span><br>
+					<img src=images/spacer.gif height=20><br>
+					<table border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td>
+							
+								<img class=logo src=imagelib/paketi/cruisers/costa/concordia.jpg>
+							
+						</td>
+						<td width=5><img src=images/spacer.gif width=5><br></td>
+						<td valign=top>									
+							<span class=postavka_ime>Ime ladje:</span><br>
+							<!--
+							<span class=postavka_vsebina>Costa Concordia<br>(Costa Crociere)</span><br>
+							-->
+							<span class=postavka_vsebina>Costa Concordia</span><br>
+							<img src=images/spacer.gif height=5><br>
+							<span class=postavka_ime>Cena:</span><br><span class=postavka_vsebina>od € 599 do € 3.379</span><br>
+							<img src=images/spacer.gif height=5><br>							
+																
+							
+								  <span class=postavka_ime>Posebna ponudba:</span><br><span class=postavka_vsebina>09.06. od 254€</span><br>
+							
+							
+							<img src=images/spacer.gif height=5><br>
+							
+							<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td>
+									<span class=postavka_ime>Kategorija:</span>
+								</td>
+								<td>															
+									
+        <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_prazna.jpg></a></td>
+        
+        </tr>
+        </table>
+        									
+								</td>
+							</tr>
+							</table>
+						</td>
+					</tr>
+					</table>
+				</td>					
+				<td valign=top align=center width=20%>
+				
+					<img class=logo src=imagelib/logo/logo/costa.jpg><br>					
+													
+					<table border=0 cellpadding=4 cellspacing=0>
+					<tr>
+						<td align=right>							
+							<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right><span class=postavka_ime><nobr>Datum odhoda:</nobr></span></td>
+							</tr>
+							<tr>
+								<td align=right>
+								april, maj, junij, julij, avgust, september, oktober, november
+								</td>
+							</tr>							
+							<tr>
+								<td>
+																					
+									<img src=images/lastminute_ponudba_SLO.gif><br>
+							
+							
+								</td>
+							</tr>
+							</table>									
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>			
+			</table>												
+		</td>
+		<td width=9 bgcolor=white></td>
+	</tr>
+	
+	
+			<!-- spodnji del, brez podrobnosti o paketu-->
+			<tr>					
+				<td colspan=3>
+					<table width=416 border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td width=321><img src=images/paket_glava_spodaj_levo_listing.jpg></td>
+						<!--<td><a href="default.asp?k=prikazi_paket&pID=994"><img border=0 src=images/paket_spodaj_desno.jpg></a></td> -->
+						<td width=95 background=images/paket_glava_spodaj_bg_listing.jpg>
+													
+							<a href="default.asp?k=prikazi_paket&pID=994&menu_path=/47/"><font face=Tahoma color=white size=2><b>Podrobnosti &#187;</b></font></a>
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+		
+	</table>		
+						
+									</td>
+									<td width=10><img src=images/spacer.gif width=5></td>
+								</tr> <!-- /EN PAKATEK-->													
+															
+								<!-- EN PAKETEK -->
+								<tr>			
+									<td width=10><img src=images/spacer.gif width=5></td>
+									<td align=center width=416 valign=top>
+															
+	<table border=0 cellspacing=0 cellpadding=0 border=0>
+	<!--
+	<tr>
+		<td colspan=3 width=8><img src=images/spacer.gif height=8></td>
+	</tr>
+	-->
+											
+	<!-- zgornji del, levi & desni rob -->
+	<tr>
+												
+		<td><img width=9 src=images/paket_zgoraj_levo.gif></td>
+		<td bgcolor=white height=9 width=416></td>
+		<td><img width=9 height=9 src=images/paket_zgoraj_desno.gif></td>
+	</tr>
+	<tr>
+		<td width=9 bgcolor=white></td>
+		<td width=394 bgcolor=white>
+			<img src=images/spacer.gif width=394 height=1><br>									
+			<table border=0 cellpadding=0 cellspacing=0 class=paket>
+			<tr>
+				<td valign=top width=80%>
+					<span class=ime>8 dni - ZAHODNO SREDOZEMLJE</span><br>
+					<img src=images/spacer.gif height=20><br>
+					<table border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td>
+							
+								<img class=logo src=imagelib/paketi/cruisers/louis/coral.jpg>
+							
+						</td>
+						<td width=5><img src=images/spacer.gif width=5><br></td>
+						<td valign=top>									
+							<span class=postavka_ime>Ime ladje:</span><br>
+							<!--
+							<span class=postavka_vsebina>Coral<br>(Louis Cruise Lines)</span><br>
+							-->
+							<span class=postavka_vsebina>Coral</span><br>
+							<img src=images/spacer.gif height=5><br>
+							<span class=postavka_ime>Cena:</span><br><span class=postavka_vsebina>od € 835 do € 2.160</span><br>
+							<img src=images/spacer.gif height=5><br>							
+																
+							
+								  <span class=postavka_ime>Posebna ponudba:</span><br><span class=postavka_vsebina>28.06 in 25.10</span><br>
+							
+							
+							<img src=images/spacer.gif height=5><br>
+							
+							<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td>
+									<span class=postavka_ime>Kategorija:</span>
+								</td>
+								<td>															
+									
+        <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_prazna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_prazna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_prazna.jpg></a></td>
+        
+        </tr>
+        </table>
+        									
+								</td>
+							</tr>
+							</table>
+						</td>
+					</tr>
+					</table>
+				</td>					
+				<td valign=top align=center width=20%>
+				
+					<img class=logo src=imagelib/logo/logo/louis.jpg><br>					
+													
+					<table border=0 cellpadding=4 cellspacing=0>
+					<tr>
+						<td align=right>							
+							<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right><span class=postavka_ime><nobr>Datum odhoda:</nobr></span></td>
+							</tr>
+							<tr>
+								<td align=right>
+								oktober, november, april, maj, junij, julij, avgust, september
+								</td>
+							</tr>							
+							<tr>
+								<td>
+																					
+									<img src=images/skupinska_ponudba_SLO.gif><br>
+							
+							
+								</td>
+							</tr>
+							</table>									
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>			
+			</table>												
+		</td>
+		<td width=9 bgcolor=white></td>
+	</tr>
+	
+	
+			<!-- spodnji del, brez podrobnosti o paketu-->
+			<tr>					
+				<td colspan=3>
+					<table width=416 border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td width=321><img src=images/paket_glava_spodaj_levo_listing.jpg></td>
+						<!--<td><a href="default.asp?k=prikazi_paket&pID=728"><img border=0 src=images/paket_spodaj_desno.jpg></a></td> -->
+						<td width=95 background=images/paket_glava_spodaj_bg_listing.jpg>
+													
+							<a href="default.asp?k=prikazi_paket&pID=728&menu_path=/47/"><font face=Tahoma color=white size=2><b>Podrobnosti &#187;</b></font></a>
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+		
+	</table>		
+						
+									</td>
+									<td width=10><img src=images/spacer.gif width=5></td>
+								</tr> <!-- /EN PAKATEK-->													
+															
+								<!-- EN PAKETEK -->
+								<tr>			
+									<td width=10><img src=images/spacer.gif width=5></td>
+									<td align=center width=416 valign=top>
+															
+	<table border=0 cellspacing=0 cellpadding=0 border=0>
+	<!--
+	<tr>
+		<td colspan=3 width=8><img src=images/spacer.gif height=8></td>
+	</tr>
+	-->
+											
+	<!-- zgornji del, levi & desni rob -->
+	<tr>
+												
+		<td><img width=9 src=images/paket_zgoraj_levo.gif></td>
+		<td bgcolor=white height=9 width=416></td>
+		<td><img width=9 height=9 src=images/paket_zgoraj_desno.gif></td>
+	</tr>
+	<tr>
+		<td width=9 bgcolor=white></td>
+		<td width=394 bgcolor=white>
+			<img src=images/spacer.gif width=394 height=1><br>									
+			<table border=0 cellpadding=0 cellspacing=0 class=paket>
+			<tr>
+				<td valign=top width=80%>
+					<span class=ime>8 dni - VZHODNO SREDOZEMLJE</span><br>
+					<img src=images/spacer.gif height=20><br>
+					<table border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td>
+							
+								<img class=logo src=imagelib/paketi/cruisers/costa/fortuna.jpg>
+							
+						</td>
+						<td width=5><img src=images/spacer.gif width=5><br></td>
+						<td valign=top>									
+							<span class=postavka_ime>Ime ladje:</span><br>
+							<!--
+							<span class=postavka_vsebina>Costa Fortuna<br>(Costa Crociere)</span><br>
+							-->
+							<span class=postavka_vsebina>Costa Fortuna</span><br>
+							<img src=images/spacer.gif height=5><br>
+							<span class=postavka_ime>Cena:</span><br><span class=postavka_vsebina>od € 599 do € 3.079</span><br>
+							<img src=images/spacer.gif height=5><br>							
+																
+							
+								  <span class=postavka_ime>Posebna ponudba:</span><br><span class=postavka_vsebina>28.07. od 699€</span><br>
+							
+							
+							<img src=images/spacer.gif height=5><br>
+							
+							<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td>
+									<span class=postavka_ime>Kategorija:</span>
+								</td>
+								<td>															
+									
+        <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polovicka.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_prazna.jpg></a></td>
+        
+        </tr>
+        </table>
+        									
+								</td>
+							</tr>
+							</table>
+						</td>
+					</tr>
+					</table>
+				</td>					
+				<td valign=top align=center width=20%>
+				
+					<img class=logo src=imagelib/logo/logo/costa.jpg><br>					
+													
+					<table border=0 cellpadding=4 cellspacing=0>
+					<tr>
+						<td align=right>							
+							<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right><span class=postavka_ime><nobr>Datum odhoda:</nobr></span></td>
+							</tr>
+							<tr>
+								<td align=right>
+								maj, junij, julij, avgust, september, oktober, november
+								</td>
+							</tr>							
+							<tr>
+								<td>
+																					
+									<img src=images/lastminute_ponudba_SLO.gif><br>
+							
+							
+								</td>
+							</tr>
+							</table>									
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>			
+			</table>												
+		</td>
+		<td width=9 bgcolor=white></td>
+	</tr>
+	
+	
+			<!-- spodnji del, brez podrobnosti o paketu-->
+			<tr>					
+				<td colspan=3>
+					<table width=416 border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td width=321><img src=images/paket_glava_spodaj_levo_listing.jpg></td>
+						<!--<td><a href="default.asp?k=prikazi_paket&pID=995"><img border=0 src=images/paket_spodaj_desno.jpg></a></td> -->
+						<td width=95 background=images/paket_glava_spodaj_bg_listing.jpg>
+													
+							<a href="default.asp?k=prikazi_paket&pID=995&menu_path=/47/"><font face=Tahoma color=white size=2><b>Podrobnosti &#187;</b></font></a>
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+		
+	</table>		
+						
+									</td>
+									<td width=10><img src=images/spacer.gif width=5></td>
+								</tr> <!-- /EN PAKATEK-->													
+															
+								<!-- EN PAKETEK -->
+								<tr>			
+									<td width=10><img src=images/spacer.gif width=5></td>
+									<td align=center width=416 valign=top>
+															
+	<table border=0 cellspacing=0 cellpadding=0 border=0>
+	<!--
+	<tr>
+		<td colspan=3 width=8><img src=images/spacer.gif height=8></td>
+	</tr>
+	-->
+											
+	<!-- zgornji del, levi & desni rob -->
+	<tr>
+												
+		<td><img width=9 src=images/paket_zgoraj_levo.gif></td>
+		<td bgcolor=white height=9 width=416></td>
+		<td><img width=9 height=9 src=images/paket_zgoraj_desno.gif></td>
+	</tr>
+	<tr>
+		<td width=9 bgcolor=white></td>
+		<td width=394 bgcolor=white>
+			<img src=images/spacer.gif width=394 height=1><br>									
+			<table border=0 cellpadding=0 cellspacing=0 class=paket>
+			<tr>
+				<td valign=top width=80%>
+					<span class=ime>13 dni - SKANDINAVIJA & RUSIJA</span><br>
+					<img src=images/spacer.gif height=20><br>
+					<table border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td>
+							
+								<img class=logo src=imagelib/paketi/cruisers/rccl/jewel.jpg>
+							
+						</td>
+						<td width=5><img src=images/spacer.gif width=5><br></td>
+						<td valign=top>									
+							<span class=postavka_ime>Ime ladje:</span><br>
+							<!--
+							<span class=postavka_vsebina>Jewel of the Seas<br>(Royal Caribbean)</span><br>
+							-->
+							<span class=postavka_vsebina>Jewel of the Seas</span><br>
+							<img src=images/spacer.gif height=5><br>
+							<span class=postavka_ime>Cena:</span><br><span class=postavka_vsebina>od € 1.670 do € 29.430</span><br>
+							<img src=images/spacer.gif height=5><br>							
+																
+							
+								  <span class=postavka_ime>Posebna ponudba:</span><br><span class=postavka_vsebina>10., 22.07, 03.08. od 1.240€</span><br>
+							
+							
+							<img src=images/spacer.gif height=5><br>
+							
+							<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td>
+									<span class=postavka_ime>Kategorija:</span>
+								</td>
+								<td>															
+									
+        <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polna.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_polovicka.jpg></a></td>
+        
+                <td><a href="#" OnClick="return OdpriPopup('legenda_kat.asp?kat=1',400,200,'');"><img border=0 src=images/zvezdica_prazna.jpg></a></td>
+        
+        </tr>
+        </table>
+        									
+								</td>
+							</tr>
+							</table>
+						</td>
+					</tr>
+					</table>
+				</td>					
+				<td valign=top align=center width=20%>
+				
+					<img class=logo src=imagelib/logo/logo/rccl.jpg><br>					
+													
+					<table border=0 cellpadding=4 cellspacing=0>
+					<tr>
+						<td align=right>							
+							<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=right><span class=postavka_ime><nobr>Datum odhoda:</nobr></span></td>
+							</tr>
+							<tr>
+								<td align=right>
+								avgust, maj, junij, julij
+								</td>
+							</tr>							
+							<tr>
+								<td>
+														
+									<img src=images/posebna_ponudba_SLO.gif><br>
+							
+							
+								</td>
+							</tr>
+							</table>									
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>			
+			</table>												
+		</td>
+		<td width=9 bgcolor=white></td>
+	</tr>
+	
+	
+			<!-- spodnji del, brez podrobnosti o paketu-->
+			<tr>					
+				<td colspan=3>
+					<table width=416 border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td width=321><img src=images/paket_glava_spodaj_levo_listing.jpg></td>
+						<!--<td><a href="default.asp?k=prikazi_paket&pID=840"><img border=0 src=images/paket_spodaj_desno.jpg></a></td> -->
+						<td width=95 background=images/paket_glava_spodaj_bg_listing.jpg>
+													
+							<a href="default.asp?k=prikazi_paket&pID=840&menu_path=/47/"><font face=Tahoma color=white size=2><b>Podrobnosti &#187;</b></font></a>
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+		
+	</table>		
+						
+									</td>
+									<td width=10><img src=images/spacer.gif width=5></td>
+								</tr> <!-- /EN PAKATEK-->													
+								
+								<!-- PAKETI -->
+								
+									<tr>
+										<td width=10><img src=images/spacer.gif width=5></td>
+										<td style="padding-right:8px" align=right><!-- PAGER -->
+<a href='default.asp?id=47&filter_prva_stran=true&iskalnik_aktiven=&stran=1'>&lt; </a><a href='default.asp?id=47&filter_prva_stran=true&iskalnik_aktiven=&stran=1' style='color:red'><b>1</b></a> <a href='default.asp?id=47&filter_prva_stran=true&iskalnik_aktiven=&stran=2'>2</a> <a href='default.asp?id=47&filter_prva_stran=true&iskalnik_aktiven=&stran=2'>&gt;</a><!-- PAGER --></td>
+										<td width=10><img src=images/spacer.gif width=5></td>
+									</tr>
+								
+				<tr>
+					<td colspan=3 height=5><img src=images/spacer.gif height=5></td>
+				</tr>				
+				</table>
+			</td>			
+		</tr>				
+		</table> <!-- /VSEBINA -->				
+	</td>
+	
+	<td width=3 bgcolor=white><img src=images/spacer.gif width=3></td>
+	
+	<td valign=top width=148>				
+
+
+<script language=javascript>
+	
+	function iskanje()
+	{
+		iskalnik.submit();
+	}
+	
+	function PosljiAnketo()
+	{
+		anketa.submit();
+		return false;
+	}
+	
+</script>
+	
+	<!-- HITRO ISKANJE -->
+	<table border=0 cellpadding=0 cellspacing=0>
+	<tr>
+		<td height="6" bgcolor="#C9D0D8">
+	</tr>
+	<tr>
+		<td valign=top>
+			<form name=hitro_iskanje method=POST action="default.asp?k=hitro_iskanje" style="margin: 0px" ID="Form1">
+			<table width=148 height=41 border=0 cellpadding=0 cellspacing=0 background=images/hitro_iskanje_bg.gif ID="Table1">
+			<tr>							
+				<td valign="top" style="padding-top: 3px; padding-left: 12px">
+					<input type=text value="" name=iskalni_niz style="font-size:10px;width:120px;padding:0;margin:0px;border:0px;">
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" align="right"><a class="White" style="padding-right: 13px; color: white; font-family: Tahoma; font-size: 11px;" href="javascript:document.hitro_iskanje.submit()"><b>Išči &#187;</b></a></td>
+			</tr>
+			</table>
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td height="6" bgcolor="#C9D0D8">
+	</tr>
+	<tr>
+		<td height="5" bgcolor="white"></td>
+	</tr>
+	</table>
+
+	<!-- ISKALNIK -->
+	<form name=iskalnik action="default.asp?k=krizarjenja" method=POST style="margin: 0px">
+	<input type="hidden" name="id" value="47" />
+	<table border=0 cellpadding=0 cellspacing=0 background=images/iskalnik_bg.gif>	
+	<input type=hidden name=iskalnik_aktiven value="da">
+	<tr>
+		<td colspan=2><img src=images/iskalnik_zgoraj.jpg></td>
+	</tr>
+	<tr>
+		<td colspan=2 width=148>
+			<table width=92% border=0 cellpadding=0 cellspacing=0>
+			<tr>
+				<td><img src=images/iskalnik_sredina_levo.jpg></td>
+				<td align=right><font face="Tahoma" size=2 color=#57687C>				
+				
+					<b>Potovanja</b></font>
+				
+				</td>
+			</tr>
+			</table>
+		</td>
+	<tr>
+		<td align="right">
+			
+                        <input type=hidden name=ponudbe_keyword_1 value=krizarjenja ID="Hidden1">
+                
+                        <input type=hidden name=ponudbe_keyword_2 value=trajekti ID="Hidden1">
+                
+                        <input type=hidden name=ponudbe_keyword_3 value=letala ID="Hidden1">
+                
+                        <input type=hidden name=ponudbe_keyword_4 value=vlaki ID="Hidden1">
+                
+                        <input type=hidden name=ponudbe_keyword_5 value=hoteli ID="Hidden1">
+                
+
+        <select style="width:128px;" name=filter_tip_ponudbe onchange="sel=document.iskalnik.filter_tip_ponudbe.value;if (sel != -1) {document.location.href='default.asp?k='+eval('document.iskalnik.ponudbe_keyword_'+sel+'.value')}" ID="Select2">
+                <!--
+                <option value=-1>Vsi tipi ponudb</option>
+                -->
+
+        
+                                <option  value=1>Križarjenja</option>
+                                
+                                <option  value=2>Trajekti</option>
+                                
+                                <option  value=3>Letala</option>
+                                
+                                <option  value=4>Vlaki</option>
+                                
+                                <option  value=5>Hoteli in paketi</option>
+                                
+                </select>
+                <br>
+        
+						<img src=images/spacer.gif height=2><br>
+						
+        <select style="width:128px;" name=filter_destinacija>
+                <option value=-1>Vse destinacije</option>
+                
+                                        <option  value=580>Afrika</option>
+                                        
+                                        <option  value=25>Aljaska</option>
+                                        
+                                        <option  value=588>Avstralija</option>
+                                        
+                                        <option  value=581>Azija</option>
+                                        
+                                        <option  value=35>Bahami</option>
+                                        
+                                        <option  value=23>Baltske prestolnice</option>
+                                        
+                                        <option  value=579>Bermudi</option>
+                                        
+                                        <option  value=600>Brazilija</option>
+                                        
+                                        <option  value=24>Črno morje</option>
+                                        
+                                        <option  value=69>Galapagos</option>
+                                        
+                                        <option  value=70>Havaji</option>
+                                        
+                                        <option  value=20>Južna Amerika</option>
+                                        
+                                        <option  value=18>Južni Karibi</option>
+                                        
+                                        <option  value=30>Kalifornija</option>
+                                        
+                                        <option  value=576>Kanada</option>
+                                        
+                                        <option  value=339>Kanarski otoki</option>
+                                        
+                                        <option  value=16>Karibi</option>
+                                        
+                                        <option  value=340>Madeira</option>
+                                        
+                                        <option  value=29>Mehika</option>
+                                        
+                                        <option  value=583>North Cape</option>
+                                        
+                                        <option  value=22>Norveški Fjordi</option>
+                                        
+                                        <option  value=589>Nova Zelandija</option>
+                                        
+                                        <option  value=34>Panamski prekop</option>
+                                        
+                                        <option  value=21>Severna Evropa</option>
+                                        
+                                        <option  value=13>Sredozemlje</option>
+                                        
+                                        <option  value=578>Transatlantik</option>
+                                        
+                                        <option  value=582>Velika Britanija</option>
+                                        
+                                        <option  value=17>Vzhodni Karibi</option>
+                                        
+                                        <option  value=14>Vzhodno Sredozemlje</option>
+                                        
+                                        <option  value=19>Zahodni Karibi</option>
+                                        
+                                        <option  value=15>Zahodno Sredozemlje</option>
+                                        
+        </select>
+        <br>
+
+						<img src=images/spacer.gif height=2><br>
+						
+        <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+                <td>
+                        <select style="width:38px;;font-size: 11px" name="filter_datum_odhoda_dan">
+                                <option value=-1>D</option>
+                                
+                                        <option  value="1">1</option>
+                                        
+                                        <option  value="2">2</option>
+                                        
+                                        <option  value="3">3</option>
+                                        
+                                        <option  value="4">4</option>
+                                        
+                                        <option  value="5">5</option>
+                                        
+                                        <option  value="6">6</option>
+                                        
+                                        <option  value="7">7</option>
+                                        
+                                        <option  value="8">8</option>
+                                        
+                                        <option  value="9">9</option>
+                                        
+                                        <option  value="10">10</option>
+                                        
+                                        <option  value="11">11</option>
+                                        
+                                        <option  value="12">12</option>
+                                        
+                                        <option  value="13">13</option>
+                                        
+                                        <option  value="14">14</option>
+                                        
+                                        <option  value="15">15</option>
+                                        
+                                        <option  value="16">16</option>
+                                        
+                                        <option  value="17">17</option>
+                                        
+                                        <option  value="18">18</option>
+                                        
+                                        <option  value="19">19</option>
+                                        
+                                        <option  value="20">20</option>
+                                        
+                                        <option  value="21">21</option>
+                                        
+                                        <option  value="22">22</option>
+                                        
+                                        <option  value="23">23</option>
+                                        
+                                        <option  value="24">24</option>
+                                        
+                                        <option  value="25">25</option>
+                                        
+                                        <option  value="26">26</option>
+                                        
+                                        <option  value="27">27</option>
+                                        
+                                        <option  value="28">28</option>
+                                        
+                                        <option  value="29">29</option>
+                                        
+                                        <option  value="30">30</option>
+                                        
+                                        <option  value="31">31</option>
+                                        
+                        </select>
+                </td>
+                <td>
+                        <select style="width:37px;;font-size: 11px" name="filter_datum_odhoda_mesec">
+                                <option value=-1>M</option>
+                                
+                                        <option  value="1">1</option>
+                                        
+                                        <option  value="2">2</option>
+                                        
+                                        <option  value="3">3</option>
+                                        
+                                        <option  value="4">4</option>
+                                        
+                                        <option  value="5">5</option>
+                                        
+                                        <option  value="6">6</option>
+                                        
+                                        <option  value="7">7</option>
+                                        
+                                        <option  value="8">8</option>
+                                        
+                                        <option  value="9">9</option>
+                                        
+                                        <option  value="10">10</option>
+                                        
+                                        <option  value="11">11</option>
+                                        
+                                        <option  value="12">12</option>
+                                        
+                        </select>
+                </td>
+                
+                        <td>
+                
+
+                        <select style="width:53px;;font-size: 11px" name="filter_datum_odhoda_leto">
+                                <option value=-1>L</option>
+                                
+                                        <option  value="2008">2008</option>
+                                        
+                                        <option  value="2009">2009</option>
+                                        
+                        </select>
+                </td>
+        </tr>
+        </table>
+
+						<img src=images/spacer.gif height=2><br>
+						
+        <select style="width:128px;" name=filter_ladjar>
+                <option value=-1>Vsi ladjarji</option>
+                
+                                        <option  value=78>Azamara</option>
+                                        
+                                        <option  value=31>Carnival</option>
+                                        
+                                        <option  value=23>Celebrity Cruises</option>
+                                        
+                                        <option  value=64>CFC cruise club</option>
+                                        
+                                        <option  value=55>Classic International Cruises</option>
+                                        
+                                        <option  value=57>Corsica & Sardinia F.</option>
+                                        
+                                        <option  value=20>Costa Crociere</option>
+                                        
+                                        <option  value=56>GNV</option>
+                                        
+                                        <option  value=21>Louis Cruise Lines</option>
+                                        
+                                        <option  value=24>MSC Crociere</option>
+                                        
+                                        <option  value=59>NCL</option>
+                                        
+                                        <option  value=22>Royal Caribbean</option>
+                                        
+        </select>
+        <br>
+
+						<img src=images/spacer.gif height=2><br>
+						
+
+        <select style="width:128px;" name=filter_ladja>
+                <option value=-1>Vse ladje</option>
+                
+                                        <option  value=131>"3 star"</option>
+                                        
+                                        <option  value=35>Adventure of the Seas</option>
+                                        
+                                        <option  value=32>Aquamarine</option>
+                                        
+                                        <option  value=92>Arion</option>
+                                        
+                                        <option  value=152>Azamara Journey</option>
+                                        
+                                        <option  value=153>Azamara Quest</option>
+                                        
+                                        <option  value=112>Brilliance of the Seas</option>
+                                        
+                                        <option  value=103>Carnival Glory</option>
+                                        
+                                        <option  value=49>Century</option>
+                                        
+                                        <option  value=91>Constellation</option>
+                                        
+                                        <option  value=95>Coral</option>
+                                        
+                                        <option  value=56>Costa Allegra</option>
+                                        
+                                        <option  value=27>Costa Atlantica</option>
+                                        
+                                        <option  value=57>Costa Classica</option>
+                                        
+                                        <option  value=97>Costa Concordia</option>
+                                        
+                                        <option  value=59>Costa Europa</option>
+                                        
+                                        <option  value=26>Costa Fortuna</option>
+                                        
+                                        <option  value=25>Costa Magica</option>
+                                        
+                                        <option  value=96>Costa Marina</option>
+                                        
+                                        <option  value=23>Costa Mediterranea</option>
+                                        
+                                        <option  value=60>Costa Romantica</option>
+                                        
+                                        <option  value=139>Costa Serena</option>
+                                        
+                                        <option  value=62>Costa Victoria</option>
+                                        
+                                        <option  value=151>Cristal</option>
+                                        
+                                        <option  value=105>Enchantment of the Seas</option>
+                                        
+                                        <option  value=36>Explorer of the Seas</option>
+                                        
+                                        <option  value=107>Freedom of the Seas</option>
+                                        
+                                        <option  value=37>Galaxy</option>
+                                        
+                                        <option  value=109>Grandeur of the Seas</option>
+                                        
+                                        <option  value=85>Infinity</option>
+                                        
+                                        <option  value=106>Jewel of the Seas</option>
+                                        
+                                        <option  value=50>Legend of the Seas</option>
+                                        
+                                        <option  value=140>Liberty of the Seas</option>
+                                        
+                                        <option  value=100>M/N Sardinia Regina</option>
+                                        
+                                        <option  value=98>M/N Suprema</option>
+                                        
+                                        <option  value=38>Majesty of the Seas</option>
+                                        
+                                        <option  value=42>Mariner of the Seas</option>
+                                        
+                                        <option  value=33>Mercury</option>
+                                        
+                                        <option  value=34>Millennium</option>
+                                        
+                                        <option  value=111>Monarch of the Seas</option>
+                                        
+                                        <option  value=48>MSC Armonia</option>
+                                        
+                                        <option  value=58>MSC Lirica</option>
+                                        
+                                        <option  value=66>MSC Melody</option>
+                                        
+                                        <option  value=94>MSC Musica</option>
+                                        
+                                        <option  value=28>MSC Opera</option>
+                                        
+                                        <option  value=135>MSC Orchestra</option>
+                                        
+                                        <option  value=148>MSC Poesia</option>
+                                        
+                                        <option  value=68>MSC Rhapsody</option>
+                                        
+                                        <option  value=29>MSC Sinfonia</option>
+                                        
+                                        <option  value=43>Navigator of the Seas</option>
+                                        
+                                        <option  value=123>Norwegian Majesty</option>
+                                        
+                                        <option  value=149>Orient Queen</option>
+                                        
+                                        <option  value=93>Perla</option>
+                                        
+                                        <option  value=117>Pride of Hawaii</option>
+                                        
+                                        <option  value=44>Radiance of the Seas</option>
+                                        
+                                        <option  value=47>Rhapsody of the Seas</option>
+                                        
+                                        <option  value=24>Sapphire</option>
+                                        
+                                        <option  value=45>Serenade of the Seas</option>
+                                        
+                                        <option  value=150>Solstice</option>
+                                        
+                                        <option  value=110>Sovereign of the Seas</option>
+                                        
+                                        <option  value=41>Splendour of the Seas</option>
+                                        
+                                        <option  value=39>Summit</option>
+                                        
+                                        <option  value=86>Vision of the Seas</option>
+                                        
+                                        <option  value=40>Voyager of the Seas</option>
+                                        
+                                        <option  value=46>Xpedition</option>
+                                        
+        </select>
+        <br>
+
+						<img src=images/spacer.gif height=2><br>
+						
+
+                <select style="width:128px;" name=filter_stevilo_dni onchange="">
+                        <option value=-1>Število dni</option>
+        
+                                <option  value=9>11-15 dni</option>
+                                
+                                <option  value=6>1-3 dni</option>
+                                
+                                <option  value=7>4-7 dni</option>
+                                
+                                <option  value=8>8-10 dni</option>
+                                
+                                <option  value=10>nad 15 dni</option>
+                                
+                </select>
+                <br>
+        
+						<img src=images/spacer.gif height=2><br>
+						
+        <select style="width:128px" name=filter_tip_pponudbe ID="Select1">
+                <option value=-1>Vse ponudbe</option>
+                
+                                        <option  value=1>Posebna ponudba</option>
+                                        
+                                        <option  value=2>Lastminute ponudba</option>
+                                        
+                                        <option  value=3>Skupinski odhod</option>
+                                        
+        </select>
+        <br>
+
+						<img src=images/spacer.gif height=2><br>
+						
+        <select style="width:128px;;" name="filter_cena">
+                <option value=-1>Cena</option>
+                <option  value="1">do € 400</option><option  value="2">€ 400 - € 900</option><option  value="3">€ 900 - € 1.500</option><option  value="4">€ 1.500 - € 3.000</option><option  value="5">€ 3.000 - € 5.000</option><option  value="6">nad 5.000 €</option>
+        </select>
+        <br>
+
+			
+		</td>
+		<td width=9><img src=images/spacer.gif width=9></td>
+	</tr>
+
+	<tr>
+		<td colspan=2 align="right" style="padding-right:12px;" height=20 background=images/iskalnik_spodaj_bg.gif>
+			<a class="White" style="color: white; font-family: Tahoma; font-size: 11px;" href=# OnClick="javascript:iskanje()"><b>Prikaži&nbsp;&#187;</b></a>			
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan=2 height=4><img src=images/spacer.gif height=4><br /></td>
+	</tr>
+	</table>
+	</form>
+	<!-- /ISKALNIK -->
+
+	<img src=images/spacer.gif height=5><br />
+
+<!-- BANNERS -->
+
+                        <table border=0 cellpadding=0 cellspacing=0 width=148>
+                
+                                                                        <tr>
+                                                                                <td align=center><a target=_blank href="http://www.costacruise.com/b2c/EU/ebrochure/costa_catalogue.html"><img border=0 src=filelib/gif/costa_ebrochure2008.gif width=144 height=191></a></td>
+                                                                        </tr>
+                                                                
+                                                <tr>
+                                                        <td><img src=images/spacer.gif height=5></td>
+                                                </tr>
+                                        
+                                                                        <tr>
+                                                                                <td align=center><a target=_top href="http://www.cruise-ferry-center.com/costa"><img border=0 src=filelib/gif/costa_banner.jpg width=144 height=144></a></td>
+                                                                        </tr>
+                                                                
+                                                <tr>
+                                                        <td><img src=images/spacer.gif height=5></td>
+                                                </tr>
+                                        
+                                                                        <tr>
+                                                                                <td align=center><a target=_top href="default.asp?id=233"><img border=0 src=filelib/gif/grp_travel.gif width=145 height=145></a></td>
+                                                                        </tr>
+                                                                
+                                                <tr>
+                                                        <td><img src=images/spacer.gif height=5></td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                        <td><a target=_blank href="http://www.celebrity.com/home.do?wuc=000201343"><img class=banner border=0 src="imagelib/banners/banners/btn_cel_square_slo.jpg"></a></td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                        <td><img src=images/spacer.gif height=5></td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                        <td><a target=_blank href="http://www.royalcaribbean.com/dealsandmore/hotdeals.do?section=3&wuc=000201343"><img class=banner border=0 src="imagelib/banners/banners/btn_rci_square_slo.jpg"></a></td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                        <td><img src=images/spacer.gif height=5></td>
+                                                </tr>
+                                        
+                                                                        <tr>
+                                                                                <td align=center><a target=_blank href="http://www.moby.it/mds/web/mini/mdispo.xpd?idlink=007283&lang=en"><img border=0 src=filelib/gif/moby_online.gif width=145 height=145></a></td>
+                                                                        </tr>
+                                                                
+                                                <tr>
+                                                        <td><img src=images/spacer.gif height=5></td>
+                                                </tr>
+                                        
+                        </table>
+                
+<!-- /BANNERS -->
+
+
+		<img src=images/spacer.gif height=2><br>
+		<!-- ANKETA -->	
+		<form action=poslji_anketo.asp method=POST name=anketa style="margin: 0px">
+		<table border=0 cellpadding=0 cellspacing=0 width=148>
+		
+		<input type=hidden name=ref value="/Default.asp?">
+		
+		<tr>
+			<td background=images/anketa_zgoraj_bg.jpg width=148>
+				<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr>
+					<td height=5><img src=images/spacer.gif height=5></td>
+				</tr>
+				<tr>
+					<td align=right>
+						<font face="Tahoma" size=2 color="white"><b>Anketa</b>&nbsp;&nbsp;&nbsp;</font>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td background=images/anketa_bg.jpg width=148 align=right>
+				<table border=0 cellpadding=0 cellspacing=0 align=right>
+				<tr>
+					<td colspan=2>
+						<table border=0 cellpadding=3 cellspacing=0>
+						<tr>
+							<td>
+								<font color=white size=1 face="Tahoma"><b>Moje najboljše križarjenje do sedaj je bilo z ladjo:</b></font>
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=2><img src=images/spacer.gif height=5><br></td>
+				</tr>
+				
+				
+				<tr>
+					<td width=10 style="padding:0px" valign=top><input type="radio" value="0" name="poll"></td>
+					<td width=100% style="padding:0px"><font color=white size=1 face="Tahoma">Royal Caribbean</font></td>
+				</tr>
+				
+				<tr>
+					<td width=10 style="padding:0px" valign=top><input type="radio" value="1" name="poll"></td>
+					<td width=100% style="padding:0px"><font color=white size=1 face="Tahoma">Louis Cruises</font></td>
+				</tr>
+				
+				<tr>
+					<td width=10 style="padding:0px" valign=top><input type="radio" value="2" name="poll"></td>
+					<td width=100% style="padding:0px"><font color=white size=1 face="Tahoma">MSC Crociere</font></td>
+				</tr>
+				
+				<tr>
+					<td width=10 style="padding:0px" valign=top><input type="radio" value="3" name="poll"></td>
+					<td width=100% style="padding:0px"><font color=white size=1 face="Tahoma">Costa Crociere</font></td>
+				</tr>
+				
+				<tr>
+					<td width=10 style="padding:0px" valign=top><input type="radio" value="4" name="poll"></td>
+					<td width=100% style="padding:0px"><font color=white size=1 face="Tahoma">Celebrity Cruises</font></td>
+				</tr>
+				
+				<tr>
+					<td width=10 style="padding:0px" valign=top><input type="radio" value="5" name="poll"></td>
+					<td width=100% style="padding:0px"><font color=white size=1 face="Tahoma">Princess Cruises</font></td>
+				</tr>
+				
+				<tr>
+					<td width=10 style="padding:0px" valign=top><input type="radio" value="6" name="poll"></td>
+					<td width=100% style="padding:0px"><font color=white size=1 face="Tahoma">Norwegian Cruise Lines</font></td>
+				</tr>
+				
+				<tr>
+					<td width=10 style="padding:0px" valign=top><input type="radio" value="7" name="poll"></td>
+					<td width=100% style="padding:0px"><font color=white size=1 face="Tahoma">Carnival</font></td>
+				</tr>
+				
+				<tr>
+					<td width=10 style="padding:0px" valign=top><input type="radio" value="8" name="poll"></td>
+					<td width=100% style="padding:0px"><font color=white size=1 face="Tahoma">drugo</font></td>
+				</tr>
+				
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td background=images/anketa_bg.jpg align=center>
+				<br>
+				<a href="#" onClick="return PosljiAnketo();"><font color=white size=1 face="Tahoma"><b>Pošlji odgovor</b></font></a><br>
+				<a href="default.asp?k=prikazi_anketo"><font color=white size=1 face="Tahoma"><b>Prikaži rezultate</b></font></a><br>
+									
+				<br>
+			</td>
+		</tr>		
+		</table>
+		</form>
+		
+		</td>
+
+</tr>
+
+</table>
+
+					</td>
+				</table>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				<img src=images/spacer.gif height=3>
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan=3>
+				<table border=0 cellpadding=0 cellspacing=0 width=100% background=images/spodaj_bg.gif>
+				<tr>
+					<td align=center>
+						<table border=0 cellpadding=0 cellspacing=0>
+						<tr>
+							<td><img src="images/spodaj_levo.gif"></td>
+							<td background="images/spodaj_sredina_bg.gif">
+								<font color=#43A0FF>Copyright &#0169; 2005 Cruise & Ferry Center, vse pravice pridržane</font>&nbsp;&nbsp;&nbsp;
+								<a href="default.asp?k=prodajni_pogoji"><font color=#43A0FF><b>Prodajni pogoji</b></font></a> <font color=#43A0FF>|</font> <a href="default.asp?k=kontakti"><font color=#43A0FF><b>Kontakti</b></font></a>
+							</td>
+							<td><img src="images/spodaj_desno.gif"></td>
+						</tr>
+						</table>						
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<!-- CACHE - OK -->
+</body>
+</html>
+

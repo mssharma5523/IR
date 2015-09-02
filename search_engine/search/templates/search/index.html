@@ -1,0 +1,200 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>Akib Engine</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="" style="margin-top: 10px">
+		<div class="text-center row">
+			<form class="form form-inline" action="" method="">
+				<div class="form-group">
+
+					<!-- <label for="searchbox">Search</label> -->
+					<input class="form-control" type="text" id="searchbox" value="{{ query }}" placeholder="type your query here..." name="query">
+				</div>
+				<div class="form-group">
+					<select class="form-control" name="qtype" required>
+						<option value="" disabled selected>connect with...</option>
+						<option value="and">AND</option>
+						<option value="or">OR</option>
+						<option value="not">NOT</option>
+						<option value="phrase">PHRASE</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<select class="form-control" name="stemming" required>
+						<option value="" disabled selected>stemming...</option>
+						<option value="on">Stemming</option>
+						<option value="off">No Stemming</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<select class="form-control" name="stop_words" required>
+						<option value="" disabled selected>stop words...</option>
+						<option value="on">Stop Words</option>
+						<option value="off">No Stop Words</option>
+					</select>
+				</div>
+				<button class="btn btn-default" type="submit" ><span class="glyphicon glyphicon-search"></span></button>
+			</form>
+		</div>
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">BM25</h3>
+					</div>
+					<div class="panel-body">
+						<p style="color:grey">found {{ bm_pages }} result(s) in {{ time }} seconds.</p>
+						<ul class="list-group">
+							{% for b in BM25 %}
+								<!-- <li class="list-group-item">{{ b }}</li> -->
+								<li class="list-group-item">
+									<div class="row">
+										<div class="col-lg-10">
+											<a href="test/{{ b.fname }}">
+												{{ b.title }}
+											</a>
+											<p>{{ b.rel_text }}</p>
+											<p>{{ b.content }}</p>
+										</div>
+										<div class="col-lg-2 text-left">
+											<font size="1">Was this relevant?<br>
+											<input class='bm25_yes' type="radio" name='bm25_{{ b.fname }}' value="yes" />Yes<br>
+											<input class='bm25_no' type="radio" name='bm25_{{ b.fname }}' value="no" />No<br></font>
+										</div>
+									</div>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="panel-footer" style="overflow:hidden">
+						<span class="step-links">
+							{% if BM25.has_previous %}
+								<a class="btn btn-default" href="?query={{ query }}&bm25={{ BM25.previous_page_number }}&tf={{ tf }}&tf_idf={{ tf_idf }}">previous</a>
+							{% endif %}
+
+							<span class="current">
+								Page {{ BM25.number }} of {{ BM25.paginator.num_pages }}.
+							</span>
+
+							{% if BM25.has_next %}
+								<a class="btn btn-default" href="?query={{ query }}&bm25={{ BM25.next_page_number }}&tf={{ tf }}&tf_idf={{ tf_idf }}">next</a>
+							{% endif %}
+						</span>
+						<button class="btn btn-default pull-right" id='click'>Click</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">TF_IDF</h3>
+					</div>
+					<div class="panel-body">
+						<p style="color:grey">found {{ tfidf_pages }} result(s) in {{ time }} seconds.</p>
+						<ul class="list-group">
+							{% for b in TF_IDF %}
+								<li class="list-group-item">
+									<div class="row">
+										<div class="col-lg-10">
+											<a href="test/{{ b.fname }}">
+												{{ b.title }}
+											</a>
+											<p>{{ b.rel_text }}</p>
+											<p>{{ b.content }}</p>
+										</div>
+										<div class="col-lg-2 text-left">
+											<font size="1">Was this relevant?<br>
+											<input type="radio" class='tfidf_yes' name='tfidf_{{ b.fname }}' value="yes" />Yes<br>
+											<input type="radio" class='tfidf_no' name='tfidf_{{ b.fname }}' value="no" />No<br></font>
+										</div>
+									</div>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="panel-footer">
+						<span class="step-links">
+							{% if TF_IDF.has_previous %}
+								<a class="btn btn-default" href="?query={{ query }}&tf_idf={{ TF_IDF.previous_page_number }}&tf={{ tf }}&bm25={{ bm25 }}">previous</a>
+							{% endif %}
+
+							<span class="current">
+								Page {{ TF_IDF.number }} of {{ TF_IDF.paginator.num_pages }}.
+							</span>
+
+							{% if TF_IDF.has_next %}
+								<a class="btn btn-default" href="?query={{ query }}&tf_idf={{ TF_IDF.next_page_number }}&tf={{ tf }}&bm25={{ bm25 }}">next</a>
+							{% endif %}
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">TF</h3>
+					</div>
+					<div class="panel-body">
+						<p style="color:grey">found {{ tf_pages }} result(s) in {{ time }} seconds.</p>
+						<ul class="list-group">
+							{% for b in TF %}
+								<li class="list-group-item">
+									<div class="row">
+										<div class="col-lg-10">
+											<a href="test/{{ b.fname }}">
+												{{ b.title }}
+											</a>
+											<p>{{ b.rel_text }}</p>
+											<p>{{ b.content }}</p>
+										</div>
+										<div class="col-lg-2 text-left">
+											<font size="1">Was this relevant?<br>
+											<input class='tf_yes' type="radio" name='tf_{{ b.fname }}' value="yes" />Yes<br>
+											<input class='tf_no' type="radio" name='tf_{{ b.fname }}' value="no" />No<br></font>
+										</div>
+									</div>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="panel-footer">
+						<span class="step-links">
+							{% if TF.has_previous %}
+								<a class="btn btn-default" href="?query={{ query }}&tf={{ TF.previous_page_number }}&tf_idf={{ tf_idf }}&bm25={{ bm25 }}">previous</a>
+							{% endif %}
+
+							<span class="current">
+								Page {{ TF.number }} of {{ TF.paginator.num_pages }}.
+							</span>
+
+							{% if TF.has_next %}
+								<a class="btn btn-default" href="?query={{ query }}&tf={{ TF.next_page_number }}&tf_idf={{ tf_idf }}&bm25={{ bm25 }}">next</a>
+							{% endif %}
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#click').click(function(){
+				var bm25_yes = $('.bm25_yes:checked').length
+				var bm25_no = $('.bm25_no:checked').length
+				
+				var tfidf_yes = $('.tfidf_yes:checked').length
+				var tfidf_no = $('.tfidf_no:checked').length
+				
+				var tf_yes = $('.tf_yes:checked').length
+				var tf_no = $('.tf_no:checked').length
+				// alert(bm25_yes);
+			});
+		});
+	</script>
+</body>
+</html>
