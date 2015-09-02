@@ -16,13 +16,13 @@ class _DeHTMLParser(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         if tag == 'p':
-            self.__text.append('\n\n')
+            self.__text.append(' ')
         elif tag == 'br':
-            self.__text.append('\n')
+            self.__text.append(' ')
 
     def handle_startendtag(self, tag, attrs):
         if tag == 'br':
-            self.__text.append('\n\n')
+            self.__text.append(' ')
 
     def text(self):
         return ''.join(self.__text).strip()

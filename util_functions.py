@@ -7,14 +7,15 @@ def getTitle(text):
     return title
 
 
-def getRelevantText(content, query):
+def getRelevantText(Content, query):
+	content = Content.lower()
 	words = query.split()
 	result = ""
 	arr = []
 	for word in words:
 		l = content.find(word)
 		r = l + len(word)
-		tem = [l-15, r+15]
+		tem = [max(0,l-15), min(r+15,len(content))]
 		arr.append(tem)
 	arr.sort(key=lambda x: x[0])
 	b = []
@@ -30,7 +31,7 @@ def getRelevantText(content, query):
 				b.append(a)
 				cur += 1
 	for c in b:
-		result += content[c[0]:c[1]]
+		result += Content[c[0]:c[1]] + "..."
 	result = ' '.join(result.split())
 	return result
 
