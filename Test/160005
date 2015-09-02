@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>The Cruise People Ltd.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="custom.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+a:link {
+	color: #ACDCFE;
+}
+a:visited {
+	color: #CCCCCC;
+}
+a:hover {
+	color: #ACDCFE;
+}
+a:active {
+	color: #ACDCFE;
+}
+.style1 {color: #0D6D8B}
+.style2 {
+	color: #ACDCFE;
+	font-weight: bold;
+}
+.style3 {
+	font-size: 12px;
+	font-weight: bold;
+}
+.style5 {color: #0D6C88; font-size: 12px;}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function openPictureWindow_Fever(imageType,imageName,imageWidth,imageHeight,alt,posLeft,posTop) {  // v4.01
+	newWindow = window.open("","newWindow","width="+imageWidth+",height="+imageHeight+",scrollbars=no,left="+posLeft+",top="+posTop);
+	newWindow.document.open();
+	newWindow.document.write('<html><title>'+alt+'</title><body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" onBlur="self.close()">'); 
+	if (imageType == "swf"){
+	newWindow.document.write('<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0\" width=\"'+imageWidth+'\" height=\"'+imageHeight+'\">');
+	newWindow.document.write('<param name=movie value=\"'+imageName+'\"><param name=quality value=high>');
+	newWindow.document.write('<embed src=\"'+imageName+'\" quality=high pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application/x-shockwave-flash\" width=\"'+imageWidth+'\" height=\"'+imageHeight+'\">');
+	newWindow.document.write('</embed></object>');	}else{
+	newWindow.document.write('<img src=\"'+imageName+'\" width='+imageWidth+' height='+imageHeight+' alt=\"'+alt+'\">'); 	}
+	newWindow.document.write('</body></html>');
+	newWindow.document.close();
+	newWindow.focus();
+}
+//-->
+</script>
+</head>
+
+<body>
+<div align="center"><img src="images/header2.gif" width="780" height="179" border="0" usemap="#Map">
+<map name="Map"><area shape="rect" coords="17,9,759,158" href="index.html" target="_self" alt="Cruise People Home Page">
+</map></div>
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+    <td class="mainPadding"><img src="images/trans.gif" alt="" width="1" height="7"></td>
+  </tr>
+  <tr>
+    <td class="mainPadding"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="197" class="alignTop"><div align="right"><table width="193" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="10"><img src="images/nav_bg01.gif" alt="" width="10" height="33"></td>
+            <td class="navBg"><a href="find-your-cruise.html" target="_blank" class="navLink">Find your cruise</a><a href="index.html" class="navLink"></a></td>
+            <td width="10"><img src="images/nav_bg02.gif" alt="" width="10" height="33"></td>
+          </tr>
+          <tr>
+            <td colspan="3"><img src="images/trans.gif" width="1" height="5"></td>
+            </tr>
+          <tr>
+            <td width="10"><img src="images/nav_bg01.gif" alt="" width="10" height="33"></td>
+            <td class="navBg"><a href="freighter-voyages.html" class="navLink">Freighter Packages</a></td>
+            <td width="10"><img src="images/nav_bg02.gif" alt="" width="10" height="33"></td>
+          </tr>
+          <tr>
+            <td colspan="3"><img src="images/trans.gif" width="1" height="5"></td>
+            </tr>
+          <tr>
+            <td width="10"><img src="images/nav_bg01.gif" alt="" width="10" height="33"></td>
+            <td class="navBg"><a href="travel-destinations.html" class="navLink">Destinations</a></td>
+            <td width="10"><img src="images/nav_bg02.gif" alt="" width="10" height="33"></td>
+          </tr>
+          <tr>
+            <td colspan="3"><img src="images/trans.gif" width="1" height="5"></td>
+            </tr>
+          <tr>
+            <td width="10"><img src="images/nav_bg01.gif" alt="" width="10" height="33"></td>
+            <td class="navBg"><a href="about_us.html" class="navLink">Company Profile</a></td>
+            <td width="10"><img src="images/nav_bg02.gif" alt="" width="10" height="33"></td>
+          </tr>
+          <tr>
+            <td colspan="3"><img src="images/trans.gif" width="1" height="5"></td>
+            </tr>
+          <tr>
+            <td width="10"><img src="images/nav_bg01.gif" alt="" width="10" height="33"></td>
+            <td class="navBg"><a href="travel-resources.html" class="navLink">Resources and Media </a></td>
+            <td width="10"><img src="images/nav_bg02.gif" alt="" width="10" height="33"></td>
+          </tr>
+          <tr>
+            <td colspan="3"><img src="images/trans.gif" width="1" height="5"></td>
+            </tr>
+        </table>
+		</div>          </td>
+        <td width="8" rowspan="2"><img src="images/trans.gif" alt="" width="8" height="1"></td>
+        <td rowspan="2" class="alignTop"><table width="549" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="images/ttl01.gif" alt="Welcome" width="549" height="40"></td>
+          </tr>
+          <tr>
+            <td class="mainContent_A"><table width="98%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="14">&nbsp;</td>
+                <td width="525" class="alignTop"><p align="left"><span class="style3">Thank you for  taking the time to visit Canada's oldest cruise agency, The Cruise People Ltd.</span><br>
+                      <em> </em></p>
+                  <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td><div align="center" class="style5"><em>&ldquo;We know our ships, we know our clients, we know  our business!&rdquo; </em>&nbsp;</div></td>
+                    </tr>
+                  </table>
+                  <p align="left">                    Our motto simply enforces  that we are not only the leading experts in the cruise industry for the last thirty  years but a family owned company that strives to maintain it.&nbsp; We specialize in cruises, yet many clients  use our other services for all their requirements when booked in conjunction  with their sea holiday.&nbsp; Everything from  airline tickets, travel insurance, coach tours, package holidays in Canada, the  United States and abroad and hotel bookings.&nbsp;</p>
+                  <p align="left"> Visit our <strong class="navLink"><a href="travel-destinations.html" class="lightBlueLink">Destinations</a></strong> section for some exceptional getaways or  our<a href="freighter-voyages.html" class="lightBlueLink"> <strong>Passenger Freighte</strong></a><strong><a href="freighter-voyages.html" class="lightBlueLink">r</a></strong> section for a true sea farer adventure!</p>
+                  <p>Contact our helpful and  friendly <strong><a href="about_us.html" class="lightBlueLink">Cruise Specialists</a></strong> for expert advise and assistance:</p>
+                  <ul>
+                    <li>we specialize  in all cruise and passenger freighter lines </li>
+                    <li>tours and  group tour travel</li>
+                    <li>individual,  incentive and business travel</li>
+                    <li>Cruise&nbsp; Lines International Association (CLIA)  affiliate</li>
+                    <li>all the  professional services you would expect from Canada's oldest travel experts</li>
+                  </ul>
+                  <p>We at The Cruise People  look forward to serving you and encourage you to <strong><a href="contact_us.html" class="lightBlueLink">contact us</a> </strong>for a unique  and memorable experience.</p>
+                  <p>Happy Voyage!</p>
+                  <table width="40%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><img src="images/JandD_Sig.gif" width="114" height="23"></td>
+                    </tr>
+                  </table>                  </td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td class="mainContent_B"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="248" class="alignTop"><table width="248"  border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td colspan="2" class="info_01">Feature 1</td>
+                    </tr>
+                  <tr>
+                    <td colspan="2" class="info_01a">
+                      <table width="90%"  border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td><div align="center"><img src="images/p04.jpg" alt="" width="147" height="84"></div></td>
+                      </tr>
+                      <tr>
+                        <td><p><br>
+                          <a href="http://content.onlineagency.com/index.aspx?site=23357&tide=2641985" class="lightBlueLink">16-Day European  Holiday with two-night stay in London followed by sea journey from  London to Copenhagen in Seabourn Pride.</a></p>
+                          <p><br>
+                                      <br>
+                            </p></td>
+                      </tr>
+                    </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" class="info_01b"><a href="contact_us.html" class="lightBlueLink"><strong>more &gt;</strong></a> </td>
+                    <td width="23"><img src="images/sec_bg01b.gif" alt="" width="23" height="19"></td>
+                  </tr>
+                </table></td>
+                <td width="6"><img src="images/trans.gif" alt="" width="6" height="1"></td>
+                <td width="248" class="alignTop"><table width="248"  border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td colspan="2" class="info_02">Featured Destinations </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="info_02a">
+                      <table width="90%"  border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td width="80"><img src="images/may08/top_p08s.jpg" alt="Sv Caledonia" width="72" height="59" onClick="openPictureWindow_Fever('jpg','images/may08/top_p08.jpg','220','160','The Cruise People Ltd.- Image SV Caledonia','','')"></td>
+                          <td class="alignTop"><strong>Cruise From Toronto</strong><br> 
+                          Three 3-day sailings aboard <strong>SV<em> Caledonia</em> </strong>are being planned for June '09. Contact us to be kept advised.</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2"><img src="images/trans.gif" alt="" width="1" height="5"></td>
+                          </tr>
+                        <tr>
+                          <td><img src="images/p03.jpg" width="72" height="54"></td>
+                          <td class="alignTop"><div align="left"><strong><span class="alignTop">LIMITED  MARCH BREAK OPPORTUNITY</span></strong><br>
+                            Southern Caribbean  Cruise<br>
+                            <a href="groups-and-incentives.html#groups">Click here for details</a></div></td>
+                        </tr>
+						<tr>
+                          <td colspan="2"><img src="images/trans.gif" alt="" width="1" height="5"></td>
+                          </tr>
+                        <tr>
+                          <td><img src="images/p03.jpg" width="72" height="54"></td>
+                          <td class="alignTop"><strong>Heading 3</strong><br>
+                            Feature3</td>
+                        </tr>
+						<tr>
+                          <td colspan="2">&nbsp;</td>
+                          </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td width="25"><strong><img src="images/sec_bg02b.gif" alt="" width="25" height="19"></strong></td>
+                    <td width="100%" class="info_02b"><a href="travel-destinations.html" class="lightBlueLink"><strong>more &gt;</strong></a></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="sideContent_Bg2"><table width="197" border="0" align="right" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="23" valign="top"><img src="images/side_cnr01.gif" alt="" width="23" height="37"></td>
+            <td width="100%" class="sideContent_Title">News &amp; Features </td>
+            <td width="23"><img src="images/side_cnr02.gif" alt="" width="23" height="37"></td>
+          </tr>
+          <tr>
+            <td colspan="3" class="sideContent_Bg"><img src="images/trans.gif" alt="" width="1" height="5"></td>
+          </tr>
+          <tr>
+            <td colspan="3" class="sideContent_Bg"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="side_Content"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="bullet01">Our ongoing <a href="http://www.thecruisepeople.ca/cruiseblog/" target="_blank" class="blueGreenText">Cruise People blog can be reached by clicking here.</a></td>
+                      </tr>
+                      <tr>
+                        <td class="bullet02">G.A.P. acquires new expediyion vessel.</td>
+                      </tr>
+                      <tr>
+                        <td class="bullet01"><a href="http://seatravel.wordpress.com/2008/06/11/new-passenger-freighter-service-between-montreal-and-england-or-belgium/">Another new passenger freighter service between Montral and Liverpool and Antwerp.. </a></td>
+                      </tr>
+                      <tr>
+                        <td class="bullet02">Have you arranged your travel Insurance? <a href="http://www.worldprotect.com/cgi-bin/consumer.pl?Agency=CRUISCA&Language=EN&UnderWriter=Voyageur" target="_blank">Click here to get covered.</a></td>
+                      </tr>
+                      <tr>
+                        <td><div align="right" class="blueLink style1"><span class="style2">Contact Us:<br>
+  Toronto: 416-444-2410<br>
+  Toll Free Dial: 800-268-6523</span> </div></td>
+                      </tr>
+                      <tr>
+                        <td><div align="right">&nbsp;</div></td>
+                      </tr>
+                  </table></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<div align="center"></div>
+<table width="780"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#2B8D97">
+  <tr>
+    <td><img src="images/footer_bg1.gif" alt="" width="780" height="19"></td>
+  </tr>
+  <tr>
+    <td class="footer"><div align="center">
+      <table width="53%" border="0" align="center" cellpadding="0" cellspacing="1">
+        <tr>
+          <td><div align="center"><a href="about_us.html">Company Profile</a></div></td>
+          <td><div align="center"><a href="http://www.thecruisepeople.ca">&copy; The Cruise People Ltd. 2008</a></div></td>
+          <td><div align="center"></div></td>
+          <td><div align="center"><a href="contact_us.html">Contact Us</a></div></td>
+        </tr>
+        <tr>
+          <td><div align="center"></div></td>
+          <td><div align="center"><a href="terms.html">Terms of Use</a></div></td>
+          <td><div align="center"></div></td>
+          <td><div align="center"></div></td>
+        </tr>
+      </table>
+      </div></td>
+  </tr>
+</table>
+</body>
+</html>
