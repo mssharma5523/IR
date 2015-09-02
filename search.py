@@ -51,3 +51,16 @@ def search_TF(input_query):
 	    ix.close()
 	    return results
 
+'''
+	function for phrasal queries
+'''
+def searchPhrasal(input_query):
+	ix = open_dir('Indexes')
+	writer = ix.writer()
+	with ix.searcher() as searcher:
+	    #query = QueryParser("Content", ix.schema,group=qparser.OrGroup).parse(input_query) ## here 'hsbc' is the search term
+	    results = searcher.search(input_query)
+	    for x in results:
+	        print x['FileName']
+	    ix.close()
+	    return results
