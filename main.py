@@ -13,12 +13,14 @@ if __name__ == "__main__":
 	query = raw_input("Please Enter the query to search for:")
 	input_query = query_AND(query)
 	print "BM25 Results"
-	result = search_BM25(input_query)
+	result = search_BM25(input_query,query)
 	for x in result:
 		print 'Title : ' + x['Title']
 		print 'Filename : ' + x['FileName']
 		print 'Short description : ' + x['Content'][0:20] + '...'
 		relevant_text = getRelevantText(x['Content'],query.lower())
 		print 'Relevant text : ' + relevant_text + '\n'
+
 	print "Phrasal Query Results"
-	result = searchPhrasal(query_phrasal(query))
+	result = searchPhrasal(query_phrasal(query),query)
+	print result[0]['RelevantText']
