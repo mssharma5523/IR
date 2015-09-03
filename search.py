@@ -21,7 +21,6 @@ def search_BM25(input_query):
 	    response = []
 	    for x in results:
 	    	temp = {}
-	        print x['FileName']
 	        temp['FileName'] = x['FileName']
 	        temp['Title'] = x['Title']
 	        temp['Content'] = x['Content']

@@ -18,7 +18,7 @@ from util_functions import *
 
 #The schema can be improved by storing the keywords (Title) which can enhance the search
 
-def create_schema():    
+def create_schema():
     schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Title=TEXT(stored=True), Content=TEXT(stored=True), Size=TEXT(stored=True), LastModified=TEXT(stored=True), LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True))
     ix = create_in("./Indexes", schema)
     global writer
@@ -36,11 +36,8 @@ def create_schema_with_stemming():
 
 #includes stop words in the schema
 def create_schema_with_stopwords():
-    analyzer = StandardAnalyzer(stoplist=None)    
-    analyzer = StandardAnalyzer()
-    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Content=TEXT(stored=True,analyzer=analyzer), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
+    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Content=TEXT(stored=True,analyzer=StandardAnalyzer(stoplist=None)), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
                     LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True))
-
     ix = create_in("./Indexes", schema)
     global writer
     writer = ix.writer()
@@ -76,6 +73,8 @@ def create_index():
 
 
 if __name__ == "__main__":
+    if not os.path.exists('./Indexes'):
+        os.mkdir('./Indexes')
     create_schema()
     #create_schema_with_stopwords()
     #create_schema_with_stemming()

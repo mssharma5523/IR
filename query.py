@@ -1,5 +1,5 @@
 '''
-This file contains the functions relating to the AND,OR,NOT and phrasal queries.. It breaks these queries 
+This file contains the functions relating to the AND,OR,NOT and phrasal queries.. It breaks these queries
 into appropriate methods.. Please add code related to them only
 '''
 
@@ -46,5 +46,9 @@ def query_NOT(input_query):
 '''
 	function for phrasal-query
 '''
-def query_phrasal(query):
-	return
+def query_phrasal(input_query):
+    ix = open_dir('Indexes')
+    writer = ix.writer()
+    query = QueryParser("Content",ix.schema,group=qparser.AndGroup).parse("\"" + input_query + "\"")
+    ix.close()
+    return query

@@ -5,7 +5,7 @@ Other files should contain functions only and the input to them should be passed
 
 import os
 from search import search_BM25, searchPhrasal
-from query import query_OR,query_AND
+from query import query_OR,query_AND, query_phrasal
 from util_functions import getRelevantText
 
 if __name__ == "__main__":
@@ -19,6 +19,6 @@ if __name__ == "__main__":
 		print 'Filename : ' + x['FileName']
 		print 'Short description : ' + x['Content'][0:20] + '...'
 		relevant_text = getRelevantText(x['Content'],query.lower())
-		print 'Relevant text : ' + relevant_text
+		print 'Relevant text : ' + relevant_text + '\n'
 	print "Phrasal Query Results"
-	result = searchPhrasal(query_AND("\"" + query + "\""))
+	result = searchPhrasal(query_phrasal(query))
