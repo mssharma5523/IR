@@ -27,8 +27,8 @@ def create_schema():
 #creates the schema for indexing by stemming words
 def create_schema_with_stemming():
     analyzer = StemmingAnalyzer()
-    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Content=TEXT(stored=True,analyzer=analyzer), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
-                    LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True))
+    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Title=TEXT(stored=True), Content=TEXT(stored=True,analyzer=analyzer), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
+                    LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True),  text=TEXT(spelling=True))
 
     ix = create_in("./Indexes", schema)
     global writer
@@ -36,8 +36,8 @@ def create_schema_with_stemming():
 
 #includes stop words in the schema
 def create_schema_with_stopwords():
-    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Content=TEXT(stored=True,analyzer=StandardAnalyzer(stoplist=None)), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
-                    LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True))
+    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Title=TEXT(stored=True), Content=TEXT(stored=True,analyzer=StandardAnalyzer(stoplist=None)), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
+                    LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True), text=TEXT(spelling=True))
     ix = create_in("./Indexes", schema)
     global writer
     writer = ix.writer()
@@ -75,7 +75,7 @@ def create_index():
 if __name__ == "__main__":
     if not os.path.exists('./Indexes'):
         os.mkdir('./Indexes')
-    create_schema()
-    #create_schema_with_stopwords()
+    #create_schema()
+    create_schema_with_stopwords()
     #create_schema_with_stemming()
     create_index()

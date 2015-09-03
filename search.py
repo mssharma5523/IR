@@ -17,15 +17,15 @@ def search(input_query,query,weighting):
 	ix = open_dir('Indexes')
 	writer = ix.writer()
 	with ix.searcher(weighting=weighting) as searcher:
-	    #query = QueryParser("Content", ix.schema,group=qparser.OrGroup).parse(input_query) ## here 'hsbc' is the search term
-	    results = searcher.search(input_query)
-	    response = []
-	    for x in results:
-	    	temp = {}
-	        temp['FileName'] = x['FileName']
-	        temp['Title'] = x['Title']
-	        temp['Content'] = x['Content'][0:20]
-	        temp['RelevantText'] = getRelevantText(x['Content'],query.lower())
-	        response.append(temp)
-	    ix.close()
-	    return response
+		#query = QueryParser("Content", ix.schema,group=qparser.OrGroup).parse(input_query) ## here 'hsbc' is the search term
+		results = searcher.search(input_query)
+		response = []
+		for x in results:
+			temp = {}
+			temp['FileName'] = x['FileName']
+			temp['Title'] = x['Title']
+			temp['Content'] = x['Content'][0:20]
+			temp['RelevantText'] = getRelevantText(x['Content'],query.lower())
+			response.append(temp)
+		ix.close()
+		return response
