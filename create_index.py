@@ -19,7 +19,7 @@ from util_functions import *
 #The schema can be improved by storing the keywords (Title) which can enhance the search
 
 def create_schema():
-    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Title=TEXT(stored=True), Content=TEXT(stored=True), Size=TEXT(stored=True), LastModified=TEXT(stored=True), LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True))
+    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Title=TEXT(stored=True), Content=TEXT(stored=True), Size=TEXT(stored=True), LastModified=TEXT(stored=True), LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True),text=TEXT(spelling=True))
     ix = create_in("./Indexes", schema)
     global writer
     writer = ix.writer()

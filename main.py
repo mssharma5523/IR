@@ -4,23 +4,30 @@ Other files should contain functions only and the input to them should be passed
 '''
 
 import os
-from search import search_BM25, searchPhrasal
+from whoosh import scoring
+from search import search
 from query import query_OR,query_AND, query_phrasal
-from util_functions import getRelevantText
+from suggestCorrections import suggestCorrections
+from printResult import printResult
 
 if __name__ == "__main__":
 	#ix = open_dir('Indexes')
 	query = raw_input("Please Enter the query to search for:")
 	input_query = query_AND(query)
+	suggestCorrections(input_query,query)
+
 	print "BM25 Results"
-	result = search_BM25(input_query,query)
-	for x in result:
-		print 'Title : ' + x['Title']
-		print 'Filename : ' + x['FileName']
-		print 'Short description : ' + x['Content'][0:20] + '...'
-		relevant_text = getRelevantText(x['Content'],query.lower())
-		print 'Relevant text : ' + relevant_text + '\n'
+	result = search(input_query,query,scoring.BM25F())
+	printResult(result,query)
 
 	print "Phrasal Query Results"
-	result = searchPhrasal(query_phrasal(query),query)
-	print result[0]['RelevantText']
+	result = search(query_phrasal(query),query,scoring.BM25F())
+	printResult(result,query)
+
+	print "TF_IDF Results"
+	result = search(input_query,query,scoring.TF_IDF())
+	printResult(result,query)
+
+	print "TF Results"
+	result = search(input_query,query,scoring.Frequency())
+	printResult(result,query)
