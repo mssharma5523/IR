@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script type="text/javascript" src="https://d14fo0winaifog.cloudfront.net/plotly-basic.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+    $.ajax({
+        type: "GET",
+        url: "Data.csv",
+        dataType: "text",
+        success: function (data) { processData(data); }
+    });
+
+    function processData(allText) {
+        var allLinesArray = allText.split('\n');
+        if (allLinesArray.length > 0) {
+            var xPoints = [];
+            var yPoints = [];
+            for (var i = 0; i <= allLinesArray.length - 1; i++) {
+                var rowData = allLinesArray[i].split(',');
+                if(rowData && rowData.length > 1)
+                {
+                    xPoints.push(rowData[0]);
+                    yPoints.push(rowData[1]);
+                }
+            }
+        }
+        var trace1 = {
+            x: [1,2,3],
+            y: [2,3,4],
+            mode: 'line',
+            type: 'scatter'    
+        };
+        var layout = {
+            title:'Line and Scatter Plot',
+            height: 500,
+            width: 500
+        };
+        Plotly.newPlot('graphDiv',[trace1],layout);
+    }
+            
+});
+</script>
+<script type="text/javascript" src="canvasjs.min.js"></script>
+</head>
+<body>
+<div id="graphDiv"></div>
+</body>
+</html>
