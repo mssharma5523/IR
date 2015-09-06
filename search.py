@@ -13,8 +13,8 @@ from query import query_AND
 '''
 	function for searching; takes the input parsed query, queryString and WeightingModel and outputs the objects
 '''
-def search(input_query,query,weighting):
-	ix = open_dir('Indexes')
+def search(input_query,query,directory,weighting):
+	ix = open_dir(directory)
 	writer = ix.writer()
 	with ix.searcher(weighting=weighting) as searcher:
 		#query = QueryParser("Content", ix.schema,group=qparser.OrGroup).parse(input_query) ## here 'hsbc' is the search term

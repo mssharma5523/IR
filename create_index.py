@@ -18,30 +18,51 @@ from util_functions import *
 
 #The schema can be improved by storing the keywords (Title) which can enhance the search
 
-def create_schema():
+def create_schema(directory):
     schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Title=TEXT(stored=True), Content=TEXT(stored=True), Size=TEXT(stored=True), LastModified=TEXT(stored=True), LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True),text=TEXT(spelling=True))
-    ix = create_in("./Indexes", schema)
+    create_non_existent_directory(directory)
+    ix = create_in(directory, schema)
     global writer
     writer = ix.writer()
+    return
 
 #creates the schema for indexing by stemming words
-def create_schema_with_stemming():
+def create_schema_with_stemming(directory):
     analyzer = StemmingAnalyzer()
     schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Title=TEXT(stored=True), Content=TEXT(stored=True,analyzer=analyzer), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
                     LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True),  text=TEXT(spelling=True))
-
-    ix = create_in("./Indexes", schema)
+    create_non_existent_directory(directory)
+    ix = create_in(directory, schema)
     global writer
     writer = ix.writer()
-
+    return 
+    
 #includes stop words in the schema
-def create_schema_with_stopwords():
+def create_schema_with_stopwords(directory):
     schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Title=TEXT(stored=True), Content=TEXT(stored=True,analyzer=StandardAnalyzer(stoplist=None)), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
                     LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True), text=TEXT(spelling=True))
-    ix = create_in("./Indexes", schema)
+    create_non_existent_directory(directory)
+    ix = create_in(directory, schema)
     global writer
     writer = ix.writer()
+    return
+    
+#schema with stop words along with stemming
+def create_schema_with_stemming_with_stopwords(directory):
+    analyzer = StemmingAnalyzer(stoplist=None)
+    schema = Schema(FileName=TEXT(stored=True), FilePath=TEXT(stored=True), Title=TEXT(stored=True), Content=TEXT(stored=True,analyzer=analyzer), Size=TEXT(stored=True), LastModified=TEXT(stored=True),
+                    LastAccessed=TEXT(stored=True), CreationTime=TEXT(stored=True), Mode=TEXT(stored=True),  text=TEXT(spelling=True))
+    create_non_existent_directory(directory)
+    ix = create_in(directory, schema)
+    global writer
+    writer = ix.writer()
+    return
 
+def create_non_existent_directory(directory):
+    if not os.path.exists(directory):
+        os.mkdir(directory)
+    return
+    
 def create_index():
     for top, dirs, files in os.walk('./Test'):
         for nm in files:
@@ -70,12 +91,12 @@ def create_index():
             except:
                 pass
     writer.commit()
-
+    return
 
 if __name__ == "__main__":
-    if not os.path.exists('./Indexes'):
-        os.mkdir('./Indexes')
-    #create_schema()
-    create_schema_with_stopwords()
-    #create_schema_with_stemming()
+    create_non_existent_directory('./Indexes')
+    #create_schema('./Indexes/withoutStopWords')
+    create_schema_with_stopwords('./Indexes/stopWordsWithoutStemming')
+    #create_schema_with_stemming('./Indexes\withStemming')
+    #create_schema_with_stemming_with_stopwords('./Indexes\stopWordsWithStemming')
     create_index()

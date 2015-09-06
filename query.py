@@ -15,8 +15,8 @@ from whoosh import qparser
  function for query parsing of AND type query.. the input is a query string and the output is the parsed query
 '''
 
-def query_AND(input_query):
-	ix = open_dir('Indexes')
+def query_AND(input_query,directory):
+	ix = open_dir(directory)
 	writer = ix.writer()
 	query = QueryParser("Content",ix.schema,group=qparser.AndGroup).parse(input_query)
 	ix.close()
@@ -25,8 +25,8 @@ def query_AND(input_query):
 '''
 	function for query parsing of OR
 '''
-def query_OR(input_query):
-	ix = open_dir('Indexes')
+def query_OR(input_query,directory):
+	ix = open_dir(directory)
 	writer = ix.writer()
 	query = QueryParser("Content",ix.schema,group=qparser.OrGroup).parse(input_query)
 	ix.close()
@@ -36,8 +36,8 @@ def query_OR(input_query):
 	function of query parsing NOT
 '''
 
-def query_NOT(input_query):
-	ix = open_dir('Indexes')
+def query_NOT(input_query,directory):
+	ix = open_dir(directory)
 	writer = ix.writer()
 	query = QueryParser("Content",ix.schema,group=qparser.NotGroup).parse(input_query)
 	ix.close()
@@ -46,8 +46,8 @@ def query_NOT(input_query):
 '''
 	function for phrasal-query
 '''
-def query_phrasal(input_query):
-    ix = open_dir('Indexes')
+def query_phrasal(input_query,directory):
+    ix = open_dir(directory)
     writer = ix.writer()
     query = QueryParser("Content",ix.schema,group=qparser.AndGroup).parse("\"" + input_query + "\"")
     ix.close()
